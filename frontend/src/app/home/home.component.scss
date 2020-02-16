@@ -1,0 +1,156 @@
+$bg-light: #fea228;
+$bg-dark: #d35916;
+$bg-shadow: #973f10;
+
+.page {
+  //   height: 100vh;
+
+  //   background: #fea228;
+  background: linear-gradient(170deg, $bg-light 0%, $bg-dark 100%);
+}
+
+.title {
+  z-index: 1000;
+  position: relative;
+  top: 0;
+  left: 15vw;
+  width: 70vw;
+  font-size: 20vw;
+
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0.01em 0.01em 0.03em $bg-shadow;
+}
+
+.subtitle {
+  font-size: 2.1vw;
+  text-align: left;
+  color: $bg-shadow;
+  margin-left: 10em;
+  margin-top: -2.5em;
+  font-weight: normal;
+  // text-shadow: 2px 2px 5px $bg-shadow;
+  text-shadow: none;
+  animation: fadein 3s;
+}
+
+.robot-1 {
+  background: url("../../assets/img/robot-0.png") left top no-repeat;
+  background-size: contain;
+  left: 0.5em;
+  top: 0.8em;
+  width: 0.6em;
+  height: 2em;
+  position: absolute;
+  // border: 1px solid red;
+
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    left: 0.2em;
+  }
+  to {
+    opacity: 1;
+    left: 0.5em;
+  }
+}
+
+.balloon {
+  background: linear-gradient(170deg, $bg-dark 0%, $bg-light 100%);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.balloon.a1 {
+  animation: balloon1 30s infinite;
+}
+.balloon.a2 {
+  animation: balloon2 30s infinite;
+}
+// .balloon.a3 {
+//   animation: balloon3 30s infinite;
+// }
+
+$randomNumber: random(5);
+
+@keyframes balloon1 {
+  0% {
+    left: 50vw;
+    top: 60vh;
+    width: 10vw;
+    height: 10vw;
+    opacity: 0.1;
+  }
+  50% {
+    left: 60vw;
+    top: 50vh;
+    width: 20vw;
+    height: 20vw;
+    opacity: 0.3;
+  }
+  100% {
+    left: 50vw;
+    top: 60vh;
+    width: 10vw;
+    height: 10vw;
+    opacity: 0.1;
+  }
+}
+
+@keyframes balloon2 {
+  0% {
+    left: 10vw;
+    top: 30vh;
+    width: 30vw;
+    height: 30vw;
+    opacity: 0.1;
+  }
+  50% {
+    left: 60vw;
+    top: 50vh;
+    width: 10vw;
+    height: 10vw;
+    opacity: 0.3;
+  }
+  100% {
+    left: 10vw;
+    top: 30vh;
+    width: 30vw;
+    height: 30vw;
+    opacity: 0.1;
+  }
+}
+
+.content {
+  padding-top: 10em;
+  padding-bottom: 5em;
+
+  h1 {
+    color: white;
+    // text-shadow: 2px 2px 5px $bg-shadow;
+    font-size: 2em;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.bottom {
+  width: 100%;
+  height: 10em;
+  background: #444;
+  padding-top: 2em;
+  padding-bottom: 5em;
+
+  h1 {
+    color: white;
+    // text-shadow: 2px 2px 5px #333;
+    font-size: 2em;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+  }
+}
