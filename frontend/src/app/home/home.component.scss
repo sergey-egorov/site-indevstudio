@@ -28,9 +28,9 @@
 }
 
 .subtitle {
-  font-size: 0.1em;
+  font-size: 0.11em;
   text-align: left;
-  color: $bg-shadow;
+  color: $bg-dark;
 
   // margin-left: 10em;
   // margin-top: -2.5em;
@@ -40,7 +40,7 @@
   animation: fadein 3s;
 
   position: relative;
-  left: 220pt;
+  left: 240pt;
   top: -80pt;
   width: 80%;
   font-weight: normal;
