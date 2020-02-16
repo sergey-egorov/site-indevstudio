@@ -1,8 +1,15 @@
 <ng-container *ngIf="data[type]">
 
-  <h1>{{ data[type].title }}</h1>
-  <p>
-    {{ data[type].note }}
-  </p>
+  <div class="context">
+    <div class="img">
+      <img [src]="data[type].img" [style.width]="data[type].imgsize" [style.height]="data[type].imgsize" />
+    </div>
+    <div class="text">
+      <h1>{{ data[type].title }}</h1>
+      <p>
+        {{ data[type].note }}
+      </p>
+    </div>
+  </div>
 
 </ng-container>

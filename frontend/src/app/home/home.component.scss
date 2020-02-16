@@ -1,6 +1,4 @@
-$bg-light: #fea228;
-$bg-dark: #d35916;
-$bg-shadow: #973f10;
+@import "../../style/colors.scss";
 
 .page {
   //   height: 100vh;
@@ -9,13 +7,19 @@ $bg-shadow: #973f10;
   background: linear-gradient(170deg, $bg-light 0%, $bg-dark 100%);
 }
 
+.splash {
+  height: 30em;
+  // border: 1px solid blue;
+}
+
 .title {
   z-index: 1000;
   position: relative;
-  top: 0;
-  left: 15vw;
-  width: 70vw;
-  font-size: 20vw;
+
+  top: -0;
+  left: 0;
+  width: 100%;
+  font-size: 22em;
 
   text-align: center;
   color: white;
@@ -24,37 +28,99 @@ $bg-shadow: #973f10;
 }
 
 .subtitle {
-  font-size: 2.1vw;
+  font-size: 0.1em;
   text-align: left;
   color: $bg-shadow;
-  margin-left: 10em;
-  margin-top: -2.5em;
-  font-weight: normal;
+
+  // margin-left: 10em;
+  // margin-top: -2.5em;
+  // font-weight: normal;
   // text-shadow: 2px 2px 5px $bg-shadow;
   text-shadow: none;
   animation: fadein 3s;
+
+  position: relative;
+  left: 220pt;
+  top: -80pt;
+  width: 100%;
+  font-weight: normal;
+
+}
+
+.robot-0 {
+  background: url("../../assets/img/robot-0.svg") left top no-repeat;
+  background-size: contain;
+  left: 0.2em;
+  top: 0.7em;
+  width: 0.7em;
+  height: 0.7em;
+
+  position: absolute;
+  // border: 1px solid red;
+  float: left;
+
+  animation: robot-0 10s infinite;
+  transition: all 1s;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+  }
 }
 
 .robot-1 {
-  background: url("../../assets/img/robot-0.png") left top no-repeat;
+  background: url("../../assets/img/robot-1.svg") left top no-repeat;
   background-size: contain;
-  left: 0.5em;
-  top: 0.8em;
-  width: 0.6em;
-  height: 2em;
+  left: 2.1em;
+  top: 0.5em;
+  width: 0.8em;
+  height: 0.8em;
+
   position: absolute;
   // border: 1px solid red;
+  float: left;
 
-  animation: fadein 3s;
+  opacity: 0;
+  animation: robot-0 10s infinite;
+  animation-delay: 5s;
+  transition: all 1s;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+  }
 }
+
+@keyframes robot-0 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes robot-1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 @keyframes fadein {
   from {
     opacity: 0;
-    left: 0.2em;
+    // left: 0.2em;
   }
   to {
     opacity: 1;
-    left: 0.5em;
+    // left: 0.5em;
   }
 }
 
@@ -124,14 +190,17 @@ $randomNumber: random(5);
   }
 }
 
+.section {
+  padding-bottom: 7em;
+}
+
 .content {
   padding-top: 10em;
-  padding-bottom: 5em;
 
   h1 {
     color: white;
-    // text-shadow: 2px 2px 5px $bg-shadow;
-    font-size: 2em;
+    text-shadow: 2px 2px 5px $bg-shadow;
+    font-size: 3em;
     font-weight: bold;
     width: 100%;
     text-align: center;

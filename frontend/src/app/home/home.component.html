@@ -1,34 +1,58 @@
 <app-main-toolbar></app-main-toolbar>
 
 <div class="page">
-  <div class="title">INDEV
-    <div class="robot-1"></div>
-    <div class="subtitle">WE CREATE INTELLIGENT SOLUTIONS</div>
+  <div class="container splash">
+    <div class="title">INDEV
+      <div class="robot-0"></div>
+      <div class="robot-1"></div>
+      <div class="subtitle">WE CREATE INTELLIGENT SOLUTIONS</div>
+    </div>
   </div>
 
   <div class="content">
     <div class="container">
-      <h1>Solutions We Build</h1>
-      <br>
-      <br>
-      <br>
 
-      <div class="row">
-        <div class="col-sm">
-          <app-devtype type="web"></app-devtype>
+      <!-- Solutions -->
+      <div class="section">
+        <h1>Solutions We Build</h1>
+        <br><br><br>
+
+        <div class="row">
+          <div class="col-sm">
+            <app-devtype type="web"></app-devtype>
+          </div>
+
+          <div class="col-sm">
+            <app-devtype type="mobile"></app-devtype>
+          </div>
         </div>
 
-        <div class="col-sm">
-          <app-devtype type="mobile"></app-devtype>
+        <div class="row">
+          <div class="col-sm">
+            <app-devtype type="desktop"></app-devtype>
+          </div>
+
+          <div class="col-sm">
+            <app-devtype type="system"></app-devtype>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="section">
+        <h1>Services We Deliver</h1>
+        <br><br><br>
+
+        <div class="row">
+          <div class="col-sm">
+            <app-devtype type="softdev"></app-devtype>
+          </div>
+
+          <div class="col-sm">
+            <app-devtype type="integration"></app-devtype>
+          </div>
         </div>
 
-        <div class="col-sm">
-          <app-devtype type="desktop"></app-devtype>
-        </div>
-
-        <div class="col-sm">
-          <app-devtype type="system"></app-devtype>
-        </div>
       </div>
 
     </div>
