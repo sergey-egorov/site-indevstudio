@@ -1,4 +1,3 @@
-
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg static-top navbar-light navbar-custom">
   <div class="container">
@@ -12,19 +11,19 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
 
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item" [ngClass]="{ 'active': page === 'home' }">
           <a class="nav-link" routerLink="/home">Home
             <span class="sr-only">(current)</span>
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" [ngClass]="{ 'active': page === 'services' }">
           <a class="nav-link" routerLink="/services">Services</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" [ngClass]="{ 'active': page === 'portfolio' }">
           <a class="nav-link" routerLink="/portfolio">Portfolio</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/home">Contact</a>
+        <li class="nav-item" [ngClass]="{ 'active': page === 'contacts' }">
+          <a class="nav-link" routerLink="/home">Contacts</a>
         </li>
       </ul>
 

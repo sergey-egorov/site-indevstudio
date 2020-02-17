@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DevtypeComponent implements OnInit {
 
-  @Input() type: string = 'web';
+  @Input() type = 'web';
 
   data = {
     'web': {

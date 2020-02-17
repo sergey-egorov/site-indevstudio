@@ -28,7 +28,7 @@
     transition: all 1s;
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.3);
       transition: all 0.5s;
     }
 }
@@ -36,6 +36,7 @@
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
     color: black;
+    transform: scale(1.2);
 }
 
 .navbar-custom .button {
