@@ -5,6 +5,7 @@
 
   //   background: #fea228;
   background: linear-gradient(170deg, $bg-light 0%, $bg-dark 100%);
+  animation: fadein 0.5s;
 }
 
 .splash {
@@ -116,7 +117,6 @@
     opacity: 1;
   }
 }
-
 
 @keyframes fadein {
   from {

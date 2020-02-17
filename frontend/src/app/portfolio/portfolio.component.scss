@@ -1,7 +1,22 @@
 @import "../../style/colors.scss";
 
+.page {
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    // left: 0.2em;
+  }
+  to {
+    opacity: 1;
+    // left: 0.5em;
+  }
+}
+
 h1 {
-    padding: 20pt;
-    color: $bg-light;
-    font-weight: bold;
+  padding: 20pt;
+  color: $bg-light;
+  font-weight: bold;
 }

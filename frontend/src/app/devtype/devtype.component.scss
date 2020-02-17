@@ -18,23 +18,24 @@ img {
   transition: all 1s;
 }
 .context:hover {
-    // background-color: linear-gradient(170deg, $bg-dark 0%, $bg-light 100%);
-    background-color: #fea22844;
-    transition: all 1s;
-    transform: scale(1.1);
+  // background-color: linear-gradient(170deg, $bg-dark 0%, $bg-light 100%);
+  background-color: #fea22844;
+  transition: all 1s;
+  transform: scale(1.1);
 }
 
 .text {
-    color: $text-dark;
-    padding-top: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
+  font-size: 1.2em;
+  color: $text-dark;
+  padding-top: 1em;
+  padding-left: 0.5em;
+  padding-right: 1em;
 
-    h1 {
-        color: white;
-        font-weight: bold;
-        font-size: 2em;
-        padding-top: 0;
-        padding-bottom: 0.5em;
-    }
+  h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
 }

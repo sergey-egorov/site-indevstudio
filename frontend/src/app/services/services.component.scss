@@ -1,9 +1,25 @@
 @import "../../style/colors.scss";
 
+.page {
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    // left: 0.2em;
+  }
+  to {
+    opacity: 1;
+    // left: 0.5em;
+  }
+}
+
 h1 {
-    padding: 20pt;
-    color: $bg-light;
-    font-weight: bold;
+  padding: 20pt;
+  color: #999;
+  font-weight: bold;
+  text-shadow: 1pt 1pt 3pt #ccc;
 }
 
 img {
@@ -25,24 +41,46 @@ img {
   transition: all 1s;
 }
 .context:hover {
-    // background-color: linear-gradient(170deg, $bg-dark 0%, $bg-light 100%);
-    background-color: #fea22844;
-    transition: all 1s;
-    transform: scale(1.1);
+  // background-color: linear-gradient(170deg, $bg-dark 0%, $bg-light 100%);
+  background-color: #eee;
+  transition: all 1s;
+  transform: scale(1.1);
 }
 
 .text {
-    color: $bg-shadow;
-    padding-top: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
+  font-size: 1.2em;
+  color: #666;
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
 
-    h1 {
-        color: $bg-light;
-        font-weight: bold;
-        font-size: 2em;
-        padding-left: 0;
-        padding-top: 0;
-        padding-bottom: 0.5em;
-    }
+  h1 {
+    color: $bg-light;
+    font-weight: bold;
+    font-size: 2em;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0.5em;
+  }
+}
+
+.button {
+  background: linear-gradient(135deg, $bg-light 0%, $bg-dark 100%);
+  border-radius: 10px;
+  color: white !important;
+  padding: 0.5em 2em !important;
+  // width: 100%;
+  font-size: 1.2em;
+  color: white;
+
+  border: none !important;
+
+  opacity: 0.8;
+  transition: all 1s;
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    transition: all 1s;
+  }
 }
