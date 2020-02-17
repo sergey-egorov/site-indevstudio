@@ -12,25 +12,25 @@ export class DevtypeComponent implements OnInit {
   data = {
     'web': {
       title: 'Web',
-      note: 'Прекрасные и удобные веб-приложения на все случаи жизни',
+      note: 'Interactive web apps for all occasions',
       img: '../../assets/img/web.svg',
       imgsize: '12em',
     },
     'mobile': {
       title: 'Mobile',
-      note: 'Прекрасные и удобные веб-приложения на все случаи жизни',
+      note: 'Mobile apps for work and entertainment',
       img: '../../assets/img/mobile.svg',
       imgsize: '12em',
     },
     'desktop': {
       title: 'Desktop',
-      note: 'Прекрасные и удобные веб-приложения на все случаи жизни',
+      note: 'Specialized desktop software for complex tasks',
       img: '../../assets/img/desktop.svg',
       imgsize: '12em',
     },
     'system': {
       title: 'System',
-      note: 'Прекрасные и удобные веб-приложения на все случаи жизни',
+      note: 'Complex distributed systems for business',
       img: '../../assets/img/system.svg',
       imgsize: '12em',
     },

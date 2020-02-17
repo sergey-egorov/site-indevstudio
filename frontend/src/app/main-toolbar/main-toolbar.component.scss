@@ -10,15 +10,27 @@
     padding: 0;
 }
 /* change the brand and text color */
-// .navbar-custom .navbar-brand,
-// .navbar-custom .navbar-text {
-//     color: darkgrey;
-// }
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: darkgrey;
+    transition: all 1s;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.5s;
+    }
+}
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
     color: darkgrey;
     font-size: 1.2em;
     padding: 0 1em;
+    transition: all 1s;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.5s;
+    }
 }
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,

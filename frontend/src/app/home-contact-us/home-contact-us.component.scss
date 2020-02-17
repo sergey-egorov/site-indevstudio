@@ -1,0 +1,48 @@
+@import "../../style/colors.scss";
+
+.content {
+  padding: 1em 2em;
+}
+
+.white {
+  color: white;
+}
+
+.bottom {
+  width: 100%;
+  background: #444;
+  padding-top: 2em;
+  padding-bottom: 5em;
+  color: #999;
+  font-size: 1.2em;
+
+  h1 {
+    color: white;
+    // text-shadow: 2px 2px 5px #333;
+    font-size: 2em;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.button {
+  background: linear-gradient(135deg, $bg-light 0%, $bg-dark 100%);
+  border-radius: 10px;
+  color: white !important;
+  padding: 0.5em 2em !important;
+  width: 100%;
+  font-size: 1.2em;
+  color: white;
+
+  border: none !important;
+
+  opacity: 0.8;
+  transition: all 1s;
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    transition: all 1s;
+  }
+}

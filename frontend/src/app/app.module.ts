@@ -8,6 +8,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ServicesComponent } from './services/services.component';
 import { MainToolbarComponent } from './main-toolbar/main-toolbar.component';
 import { DevtypeComponent } from './devtype/devtype.component';
+import { HomeContactUsComponent } from './home-contact-us/home-contact-us.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DevtypeComponent } from './devtype/devtype.component';
     PortfolioComponent,
     ServicesComponent,
     MainToolbarComponent,
-    DevtypeComponent
+    DevtypeComponent,
+    HomeContactUsComponent
   ],
   imports: [
     BrowserModule,
