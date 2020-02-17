@@ -37,13 +37,13 @@ export class DevtypeComponent implements OnInit {
 
     'softdev': {
       title: 'Software Development',
-      note: 'Прекрасные и удобные веб-приложения на все случаи жизни',
+      note: 'Software development for any purpose',
       img: '../../assets/img/softdev-2.svg',
       imgsize: '15em',
     },
     'integration': {
       title: 'Integration',
-      note: 'Прекрасные и удобные веб-приложения на все случаи жизни',
+      note: 'Building complex software solutions from heterogeneous components',
       img: '../../assets/img/integration.svg',
       imgsize: '15em',
     }
