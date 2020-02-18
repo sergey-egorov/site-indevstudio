@@ -28,9 +28,18 @@ img {
   height: 12em;
   // background: linear-gradient(170deg, $bg-light 0%, $bg-dark 100%);
   padding: 0.5em;
+  transition: all 1s;
+
+  &:hover {
+    transform: scale(1.3);
+    opacity: 1;
+    transition: all 1s;
+  }
 }
 
 .context {
+  // border: 1px solid red;
+
   display: inline-flex;
   padding-bottom: 1em;
   padding-right: 1em;
@@ -39,29 +48,38 @@ img {
 
   background-color: transparent;
   transition: all 1s;
+
+  animation: fadein 1s;
 }
-.context:hover {
-  // background-color: linear-gradient(170deg, $bg-dark 0%, $bg-light 100%);
-  background-color: #eee;
-  transition: all 1s;
-  transform: scale(1.1);
-}
+// .context:hover {
+//   background-color: #eee;
+//   transition: all 1s;
+//   transform: scale(1.1);
+// }
 
 .text {
-  font-size: 1.2em;
+  font-size: 14pt;
   color: #666;
-  padding-top: 2em;
+  padding-top: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
 
-  h1 {
+  h2 {
     color: $bg-light;
     font-weight: bold;
     font-size: 2em;
     padding-left: 0;
     padding-top: 0;
     padding-bottom: 0.5em;
+    text-shadow: 1pt 1pt 3pt #ccc;
   }
+
+  h3 {
+    color: black;
+    padding-bottom: 0.5em;
+    // font-weight: bold;
+  }
+
 }
 
 .button {
@@ -82,5 +100,51 @@ img {
     transform: scale(1.1);
     opacity: 1;
     transition: all 1s;
+  }
+}
+
+.devlink {
+  margin-left: -1.5em;
+
+  // border: 1px solid red;
+  border-radius: 3em;
+
+  width: 160pt;
+  height: 64pt;
+
+  background: none;
+
+  transition: all 1s;
+
+  .img {
+    padding: 0;
+    padding-left: 0.5em;
+    float: left;
+  }
+  img {
+    width: 64pt;
+    height: 64pt;
+  }
+
+  .text {
+    color: $bg-light;
+    padding: 0;
+    padding-right: 1em;
+    // border: 1px solid green;
+    height: 64pt;
+    vertical-align: middle;
+    display: table-cell;
+    width: 100%;
+  }
+
+  &.active {
+    background-color: #cccccc33;
+    transform: scale(1.1);
+  }
+
+  &:hover {
+    background-color: #fea22833;
+    transition: all 1s;
+    transform: scale(1.1);
   }
 }

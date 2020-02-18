@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServicesComponent implements OnInit {
 
+  devtab = 'web';
+  inttab = 'ivr';
+
   constructor() { }
 
   ngOnInit() {
