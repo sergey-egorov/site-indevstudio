@@ -9,6 +9,7 @@ import { ServicesComponent } from './services/services.component';
 import { MainToolbarComponent } from './main-toolbar/main-toolbar.component';
 import { DevtypeComponent } from './devtype/devtype.component';
 import { HomeContactUsComponent } from './home-contact-us/home-contact-us.component';
+import { DevdirComponent } from './devdir/devdir.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeContactUsComponent } from './home-contact-us/home-contact-us.compon
     ServicesComponent,
     MainToolbarComponent,
     DevtypeComponent,
-    HomeContactUsComponent
+    HomeContactUsComponent,
+    DevdirComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,5 @@
 @import "../../style/colors.scss";
 
-.page {
-  animation: fadein 0.5s;
-}
-
 @keyframes fadein {
   from {
     opacity: 0;
@@ -23,7 +19,6 @@ h1 {
 }
 
 img {
-  float: left;
   border-radius: 50%;
   width: 12em;
   height: 12em;
@@ -37,19 +32,6 @@ img {
     transition: all 1s;
   }
 }
-
-h2 {
-  color: $bg-light;
-  font-weight: bold;
-  font-size: 2em;
-  padding-left: 0;
-  padding-top: 0;
-  padding-bottom: 0.5em;
-  text-shadow: 1pt 1pt 3pt #ccc;
-}
-
-// TO DELETE
-// ---------------------------------------------------------------------------
 
 .context {
   // border: 1px solid red;
