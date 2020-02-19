@@ -4,23 +4,32 @@
 
   <div class="container">
 
-    <h1>Portfolio</h1>
-
-    <div class="row">
-      <ng-container *ngFor="let item of [1, 2, 3]">
-        <div class="col">
-          <app-ptile></app-ptile>
-        </div>
-      </ng-container>
+    <!--
+    <div class="img">
+      <img src="assets/img/robot-1-flat-red.svg" style="width: 150pt; height: 150pt;">
     </div>
+  -->
 
     <br>
+    <br>
+    <h2>Our Works</h2>
+
 
     <div class="row">
-      <ng-container *ngFor="let item of [1, 2, 3]">
+      <ng-container *ngFor="let key of Object.keys(data); let i = index; let even = even">
+
+        <ng-container *ngIf="i > 0 && even">
+          <!--
+          <ng-container *ngFor="let n of [1, 0]">
+          </ng-container>
+          -->
+          <div class="break"></div>
+        </ng-container>
+
         <div class="col">
-          <app-ptile></app-ptile>
+          <app-ptile2 [data]="data[key]"></app-ptile2>
         </div>
+
       </ng-container>
     </div>
 

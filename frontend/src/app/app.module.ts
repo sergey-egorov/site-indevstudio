@@ -12,6 +12,7 @@ import { DevtypeComponent } from './widgets/devtype/devtype.component';
 import { HomeContactUsComponent } from './widgets/home-contact-us/home-contact-us.component';
 import { VTabsComponent } from './widgets/vtabs/vtabs.component';
 import { PTileComponent } from './widgets/ptile/ptile.component';
+import { Ptile2Component } from './widgets/ptile2/ptile2.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PTileComponent } from './widgets/ptile/ptile.component';
     DevtypeComponent,
     HomeContactUsComponent,
     VTabsComponent,
-    PTileComponent
+    PTileComponent,
+    Ptile2Component
   ],
   imports: [
     BrowserModule,

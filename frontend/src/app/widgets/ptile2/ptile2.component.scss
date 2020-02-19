@@ -9,9 +9,11 @@ img {
 }
 
 .context {
-  width: 100%;
+    width: 100%;
+
   display: inline-flex;
-  padding-bottom: 1em;
+  padding-bottom: 0;
+  margin-bottom: 1em;
   cursor: pointer;
   border-radius: 1em;
 
@@ -26,17 +28,17 @@ img {
 }
 
 .text {
-  font-size: 1.2em;
-  color: $text-dark;
-  padding-top: 1em;
+  font-size: 1em;
+  color: gray;
+  padding-top: 0.8em;
   padding-left: 0.5em;
   padding-right: 1em;
 
   h1 {
-    color: white;
-    font-weight: bold;
-    font-size: 2em;
-    padding-top: 0.5em;
+    color: black;
+    font-weight: normal;
+    font-size: 1.5em;
+    padding-top: 1em;
     padding-bottom: 0.5em;
   }
 }
