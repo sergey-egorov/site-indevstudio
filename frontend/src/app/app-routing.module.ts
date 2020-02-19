@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ServicesComponent } from './services/services.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { HomeComponent } from './home/home.component';
+import { ServicesPageComponent } from './pages/services/services.component';
+import { PortfolioPageComponent } from './pages/portfolio/portfolio.component';
+import { HomePageComponent } from './pages/home/home.component';
 
 const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "home" },
-  { path: "home", component: HomeComponent },
-  { path: "portfolio", component: PortfolioComponent },
-  { path: "services", component: ServicesComponent },
+  { path: "home", component: HomePageComponent },
+  { path: "portfolio", component: PortfolioPageComponent },
+  { path: "services", component: ServicesPageComponent },
   // { path: '404', component: PagenotfoundComponent },
   { path: '**', redirectTo: 'home' }
 ];

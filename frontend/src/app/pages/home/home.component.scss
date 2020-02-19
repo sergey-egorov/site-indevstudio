@@ -1,4 +1,4 @@
-@import "../../style/colors.scss";
+@import "src/style/colors.scss";
 
 .page {
   //   height: 100vh;
@@ -38,7 +38,7 @@
   // font-weight: normal;
   // text-shadow: 2px 2px 5px $bg-shadow;
   text-shadow: none;
-  animation: fadein 3s;
+  animation: fadein-scale 3s;
 
   position: relative;
   left: 260pt;
@@ -48,12 +48,12 @@
 }
 
 .robot-0 {
-  // background: url("../../assets/img/dog.svg") left top no-repeat;
-  // background: url("../../assets/img/robot-dog-sitting.png") left top no-repeat;
-  // background: url("../../assets/img/robot-0-3.svg") left top no-repeat;
-  // background: url("../../assets/img/robot-0-1.svg") left top no-repeat;
-  // background: url("../../assets/img/robot-steam-3.svg") left top no-repeat;
-  background: url("../../assets/img/robot-test-3.png") left top no-repeat;
+  // background: url("src/assets/img/dog.svg") left top no-repeat;
+  // background: url("src/assets/img/robot-dog-sitting.png") left top no-repeat;
+  // background: url("src/assets/img/robot-0-3.svg") left top no-repeat;
+  background: url("src/assets/img/robot-0-1.svg") left top no-repeat;
+  // background: url("src/assets/img/robot-steam-3.svg") left top no-repeat;
+  // background: url("src/assets/img/robot-test-3.png") left top no-repeat;
   background-size: contain;
   left: 0.3em;
   top: 0.62em;
@@ -65,7 +65,7 @@
   // border: 1px solid red;
   float: left;
 
-  animation: fadein 3s;
+  animation: fadein-scale 3s;
   transition: all 1s;
 
   &:hover {
@@ -75,7 +75,7 @@
 }
 
 .robot-1 {
-  background: url("../../assets/img/robot-1.svg") left top no-repeat;
+  background: url("src/assets/img/robot-1.svg") left top no-repeat;
   background-size: contain;
   left: 0.2em;
   top: 0.7em;
@@ -89,7 +89,7 @@
   opacity: 0;
   // animation: robot-0 10s infinite;
   // animation-delay: 5s;
-  animation: fadein 3s;
+  animation: fadein-scale 3s;
   transition: all 1s;
 
   &:hover {
@@ -125,13 +125,25 @@
 @keyframes fadein {
   from {
     opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein-scale {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
     // left: 0.2em;
   }
   to {
+    transform: scale(1);
     opacity: 1;
     // left: 0.5em;
   }
 }
+
 
 .balloon {
   background: linear-gradient(170deg, $bg-dark 0%, $bg-light 100%);

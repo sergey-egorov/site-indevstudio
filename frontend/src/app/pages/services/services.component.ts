@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.scss']
 })
-export class ServicesComponent implements OnInit {
+export class ServicesPageComponent implements OnInit {
 
   devtab = 'web';
   inttab = 'ivr';
