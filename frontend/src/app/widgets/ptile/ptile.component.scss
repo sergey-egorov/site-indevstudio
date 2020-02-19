@@ -1,0 +1,78 @@
+@import "src/style/colors.scss";
+
+.tile {
+  // border: 1px solid red;
+  border-radius: 0.5em;
+  width: 100%;
+  padding-top: 100%;
+
+  box-shadow: 2pt 2pt 5pt #ccc;
+
+  position: relative;
+
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+}
+
+.tile-inside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  border-radius: 0.5em;
+
+  &.bg {
+    // background: linear-gradient(90deg, $bg-light 0%, $bg-dark 100%);
+    // background: radial-gradient(#fea22833 50%, #fea228 100%);
+    background: #ddd;
+    opacity: 0.5;
+  }
+
+  &.bg-img {
+    background: url("src/assets/img/cpn-ide.png") left 70pt no-repeat;
+    background-size: 100%;
+    opacity: 0.8;
+  }
+
+  &.content {
+    // padding: 1em;
+  }
+
+  &.content-more {
+    padding: 1em;
+    background: $bg-light;
+    animation: fadein 0.5s;
+    opacity: 0.5;
+  }
+
+  @keyframes fadein {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+}
+
+.header {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  width: 100%;
+  padding: 1em;
+  background: linear-gradient(150deg, $bg-light 0%, $bg-dark 100%);
+  opacity: 1;
+}
+
+h1 {
+  font-size: 1.4em;
+  color: white;
+  font-weight: bold;
+}

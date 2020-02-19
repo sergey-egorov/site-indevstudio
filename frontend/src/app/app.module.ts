@@ -11,6 +11,7 @@ import { MainToolbarComponent } from './widgets/main-toolbar/main-toolbar.compon
 import { DevtypeComponent } from './widgets/devtype/devtype.component';
 import { HomeContactUsComponent } from './widgets/home-contact-us/home-contact-us.component';
 import { VTabsComponent } from './widgets/vtabs/vtabs.component';
+import { PTileComponent } from './widgets/ptile/ptile.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { VTabsComponent } from './widgets/vtabs/vtabs.component';
     MainToolbarComponent,
     DevtypeComponent,
     HomeContactUsComponent,
-    VTabsComponent
+    VTabsComponent,
+    PTileComponent
   ],
   imports: [
     BrowserModule,
