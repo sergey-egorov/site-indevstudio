@@ -2,21 +2,30 @@
   <div class="tile-image">
   </div>
 
-  <div class="tile-inside bg">
-  </div>
+  <!-- <div class="tile-inside bg">
+  </div> -->
 
-  <div class="tile-inside bg-img">
-  </div>
-
-  <div class="tile-inside content">
+  <div class="tile-inside content" [ngClass]="{ 'hidden' : more }">
 
     <div class="header">
-      <h1>IDE for editing, simulating Colored Petri Nets</h1>
+      <h1>IDE for editing, simulating<br>Colored Petri Nets</h1>
     </div>
 
+    <img src="assets/img/desktop-red.svg" [style.width]="'95%'" [style.height]="'70%'" />
+
+    <!-- <div class="tile-inside bg-img">
+    </div> -->
+  
   </div>
 
-  <div class="tile-inside content-more" *ngIf="more" >
+  <div class="tile-inside content-more" [ngClass]="{ 'hidden' : !more }">
+      <h1>IDE for editing, simulating<br>Colored Petri Nets</h1>
+      <hr>
+      <p>
+        Desktop GUI application for editing, testing and simulating Colored Petri Nets
+      </p>
+      <button class="button" routerLink="/home">Learn more</button>
+
   </div>
 
 </div>
