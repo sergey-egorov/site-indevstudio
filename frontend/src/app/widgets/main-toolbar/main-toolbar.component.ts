@@ -9,9 +9,12 @@ export class MainToolbarComponent implements OnInit {
 
   @Input() page = 'home';
 
+  dark = false;
+
   constructor() { }
 
   ngOnInit() {
+    this.dark = this.page !== 'home';
   }
 
 }
