@@ -7,11 +7,9 @@
 @keyframes fadein {
   from {
     opacity: 0;
-    // left: 0.2em;
   }
   to {
     opacity: 1;
-    // left: 0.5em;
   }
 }
 
@@ -20,6 +18,16 @@ h1 {
   color: #999;
   // font-weight: bold;
   // text-shadow: 1pt 1pt 3pt #ccc;
+}
+
+h2 {
+  color: $bg-light;
+  font-weight: bold;
+  font-size: 2em;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0.5em;
+  text-shadow: 1pt 1pt 3pt #ccc;
 }
 
 img {
@@ -35,131 +43,5 @@ img {
     transform: scale(1.3);
     opacity: 1;
     transition: all 1s;
-  }
-}
-
-h2 {
-  color: $bg-light;
-  font-weight: bold;
-  font-size: 2em;
-  padding-left: 0;
-  padding-top: 0;
-  padding-bottom: 0.5em;
-  text-shadow: 1pt 1pt 3pt #ccc;
-}
-
-// TO DELETE
-// ---------------------------------------------------------------------------
-
-.context {
-  // border: 1px solid red;
-
-  display: inline-flex;
-  padding-bottom: 1em;
-  padding-right: 1em;
-  cursor: pointer;
-  border-radius: 1em;
-
-  background-color: transparent;
-  transition: all 1s;
-
-  animation: fadein 1s;
-}
-// .context:hover {
-//   background-color: #eee;
-//   transition: all 1s;
-//   transform: scale(1.1);
-// }
-
-.text {
-  font-size: 14pt;
-  color: #666;
-  padding-top: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-
-  h2 {
-    color: $bg-light;
-    font-weight: bold;
-    font-size: 2em;
-    padding-left: 0;
-    padding-top: 0;
-    padding-bottom: 0.5em;
-    text-shadow: 1pt 1pt 3pt #ccc;
-  }
-
-  h3 {
-    color: black;
-    padding-bottom: 0.5em;
-    // font-weight: bold;
-  }
-}
-
-.button {
-  cursor: pointer;
-  background: linear-gradient(135deg, $bg-light 0%, $bg-dark 100%);
-  border-radius: 10px;
-  color: white !important;
-  padding: 0.5em 2em !important;
-  // width: 100%;
-  font-size: 1.2em;
-  color: white;
-
-  border: none !important;
-
-  opacity: 0.8;
-  transition: all 1s;
-
-  &:hover {
-    transform: scale(1.1);
-    opacity: 1;
-    transition: all 1s;
-  }
-}
-
-.devlink {
-  cursor: pointer;
-  margin-left: -1.5em;
-
-  // border: 1px solid red;
-  border-radius: 3em;
-
-  width: 160pt;
-  height: 64pt;
-
-  background: none;
-
-  transition: all 1s;
-
-  .img {
-    padding: 0;
-    padding-left: 0.5em;
-    float: left;
-  }
-  img {
-    width: 64pt;
-    height: 64pt;
-  }
-
-  .text {
-    color: $bg-light;
-    padding: 0;
-    padding-right: 1em;
-    // border: 1px solid green;
-    height: 64pt;
-    vertical-align: middle;
-    display: table-cell;
-    width: 100%;
-  }
-
-  &.active {
-    background-color: #cccccc33;
-    transform: scale(1.1);
-  }
-
-  &:hover {
-    background-color: #fea22833;
-    transition: all 1s;
-    transform: scale(1.1);
   }
 }

@@ -20,7 +20,7 @@ export class RestService {
   public getFile(filename) {
     return new Promise((resolve, reject) => {
 
-      this.http.get(filename, this.getHttpOptions())
+      this.http.get(filename, { headers: { 'Content-Type': 'text/html; charset=utf-8' }, responseType: 'text' })
         .subscribe(
           (response: any) => {
             resolve(response);

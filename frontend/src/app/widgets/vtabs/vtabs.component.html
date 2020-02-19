@@ -1,0 +1,34 @@
+<div class="row">
+  <div class="col-auto">
+
+    <ng-container *ngFor="let tab of viewData.tabs">
+      <div class="devlink" [ngClass]="{'active': selected === tab.id}" (click)="selected = tab.id">
+        <div class="img">
+          <img [src]="tab.image" />
+        </div>
+        <div class="text" [textContent]="tab.title"> </div>
+      </div>
+    </ng-container>
+
+  </div>
+
+  <div class="col">
+
+    <ng-container *ngFor="let tab of viewData.tabs">
+
+      <div *ngIf="selected === tab.id" class="context">
+
+        <div class="text">
+          <h3>{{ tab.textTitle }}</h3>
+
+          <div [innerHTML]="tab.textHtml"></div>
+          <br>
+
+          <button class="button" routerLink="/portfolio">See Our Work</button>
+        </div>
+      </div>
+
+    </ng-container>
+
+  </div>
+</div>

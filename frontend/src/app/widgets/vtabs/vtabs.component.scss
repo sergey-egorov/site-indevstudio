@@ -3,11 +3,9 @@
 @keyframes fadein {
   from {
     opacity: 0;
-    // left: 0.2em;
   }
   to {
     opacity: 1;
-    // left: 0.5em;
   }
 }
 
@@ -106,7 +104,7 @@ img {
   // border: 1px solid red;
   border-radius: 3em;
 
-  width: 160pt;
+  width: auto;
   height: 64pt;
 
   background: none;
@@ -126,7 +124,7 @@ img {
   .text {
     color: $bg-light;
     padding: 0;
-    padding-right: 1em;
+    padding-right: 2em;
     // border: 1px solid green;
     height: 64pt;
     vertical-align: middle;
