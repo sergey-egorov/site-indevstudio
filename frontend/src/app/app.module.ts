@@ -13,6 +13,7 @@ import { HomeContactUsComponent } from './widgets/home-contact-us/home-contact-u
 import { VTabsComponent } from './widgets/vtabs/vtabs.component';
 import { PTileComponent } from './widgets/ptile/ptile.component';
 import { Ptile2Component } from './widgets/ptile2/ptile2.component';
+import { HomePageSplashComponent } from './pages/home-page-splash/home-page-splash.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { Ptile2Component } from './widgets/ptile2/ptile2.component';
     HomeContactUsComponent,
     VTabsComponent,
     PTileComponent,
-    Ptile2Component
+    Ptile2Component,
+    HomePageSplashComponent
   ],
   imports: [
     BrowserModule,

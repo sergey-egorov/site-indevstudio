@@ -1,0 +1,196 @@
+@import "src/style/colors.scss";
+
+.splash {
+    height: 36em;
+    // border: 1px solid blue;
+    // background: linear-gradient(165deg, $bg-dark 0%, $bg-light 70%, $bg-dark 120%);
+  }
+  
+  .title {
+    z-index: 1000;
+    position: relative;
+  
+    top: -0;
+    left: 0;
+    width: 100%;
+    font-size: 22em;
+  
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0.01em 0.01em 0.03em $bg-shadow;
+  }
+  
+  .subtitle {
+    font-size: 0.07em;
+    text-align: left;
+    color: $text-dark;
+  
+    // margin-left: 10em;
+    // margin-top: -2.5em;
+    // font-weight: normal;
+    // text-shadow: 2px 2px 5px $bg-shadow;
+    text-shadow: none;
+    animation: fadein-scale 1s;
+  
+    position: relative;
+    left: 260pt;
+    top: -80pt;
+    width: 80%;
+    font-weight: normal;
+  }
+  
+  .robot-0 {
+    // background: url("src/assets/img/dog.svg") left top no-repeat;
+    // background: url("src/assets/img/robot-dog-sitting.png") left top no-repeat;
+    // background: url("src/assets/img/robot-0-4.svg") left top no-repeat;
+    background: url("src/assets/img/robot-0-4-1.png") left top no-repeat;
+    // background: url("src/assets/img/robot-0-1.svg") left top no-repeat;
+    // background: url("src/assets/img/robot-1-1.svg") left top no-repeat;
+    // background: url("src/assets/img/robot-steam-3.svg") left top no-repeat;
+    // background: url("src/assets/img/robot-steam-2.svg") left top no-repeat;
+    // background: url("src/assets/img/robot-test-3.png") left top no-repeat;
+    background-size: contain;
+    left: 0.4em;
+    top: 0.62em;
+    // top: 1em;
+    width: 0.8em;
+    height: 0.8em;
+  
+    position: absolute;
+    // border: 1px solid red;
+    float: left;
+  
+    animation: fadein-scale 1s;
+    transition: all 0.5s;
+  
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.5s;
+    }
+  }
+  
+  .robot-1 {
+    background: url("src/assets/img/robot-1.svg") left top no-repeat;
+    background-size: contain;
+    left: 0.2em;
+    top: 0.7em;
+    width: 0.8em;
+    height: 0.8em;
+  
+    position: absolute;
+    // border: 1px solid red;
+    float: left;
+  
+    opacity: 0;
+    // animation: robot-0 10s infinite;
+    // animation-delay: 5s;
+    animation: fadein-scale 1s;
+    transition: all 0.5s;
+  
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.5s;
+    }
+  }
+  
+  @keyframes robot-0 {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes robot-1 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+// Baloons
+// -------------------------
+
+.balloon {
+    background: linear-gradient(170deg, $bg-dark 0%, $bg-light 100%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .balloon.a1 {
+    animation: balloon1 30s infinite;
+  }
+  .balloon.a2 {
+    animation: balloon2 30s infinite;
+  }
+  // .balloon.a3 {
+  //   animation: balloon3 30s infinite;
+  // }
+  
+  $randomNumber: random(5);
+  
+  @keyframes balloon1 {
+    0% {
+      left: 50vw;
+      top: 60vh;
+      width: 10vw;
+      height: 10vw;
+      opacity: 0.1;
+    }
+    50% {
+      left: 60vw;
+      top: 50vh;
+      width: 20vw;
+      height: 20vw;
+      opacity: 0.5;
+    }
+    100% {
+      left: 50vw;
+      top: 60vh;
+      width: 10vw;
+      height: 10vw;
+      opacity: 0.1;
+    }
+  }
+  
+  @keyframes balloon2 {
+    0% {
+      left: 10vw;
+      top: 30vh;
+      width: 30vw;
+      height: 30vw;
+      opacity: 0.1;
+    }
+    10% {
+      opacity: 0.3;
+    }
+    50% {
+      left: 60vw;
+      top: 50vh;
+      width: 10vw;
+      height: 10vw;
+      opacity: 0.2;
+    }
+    90% {
+      left: 10vw;
+      top: 30vh;
+      width: 30vw;
+      height: 30vw;
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 0.1;
+    }
+  }
+  

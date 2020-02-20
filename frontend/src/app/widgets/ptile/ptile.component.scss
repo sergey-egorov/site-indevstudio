@@ -11,12 +11,12 @@
   position: relative;
 
   cursor: pointer;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .tile:hover {
   transform: scale(1.05);
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .tile-inside {
@@ -48,17 +48,17 @@
     // background: $bg-light;
     background: linear-gradient(150deg, #fff 0%, $bg-light 100%);
     opacity: 1;
-    transition: all 1s;
+    transition: all 0.5s;
   }
 
   &.content-more {
     padding: 1em;
     // background: $bg-light;
     background: linear-gradient(150deg, $bg-dark 0%, $bg-light 100%);
-    animation: fadein 1s;
+    animation: fadein 0.5s;
     // opacity: 0.5;
     opacity: 1;
-    transition: all 1s;
+    transition: all 0.5s;
 
     h1 {
       color: white;
@@ -85,12 +85,12 @@
       padding: 0.5em 1em !important;
   
       // opacity: 0.8;
-      transition: all 1s;
+      transition: all 0.5s;
   
       &:hover {
         transform: scale(1.05);
       //   opacity: 1;
-        transition: all 1s;
+        transition: all 0.5s;
       }
     }
     
@@ -109,7 +109,7 @@
 .hidden {
   visibility: hidden;
   opacity: 0 !important;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .header {

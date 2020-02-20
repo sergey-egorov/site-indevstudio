@@ -16,12 +16,12 @@ img {
   border-radius: 1em;
 
   background-color: transparent;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 .context:hover {
   // background-color: linear-gradient(170deg, $bg-dark 0%, $bg-light 100%);
   background-color: #fea22844;
-  transition: all 1s;
+  transition: all 0.5s;
   transform: scale(1.1);
 }
 
