@@ -1,2 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
+a {
+  outline: none;
+}
+a img {
+  outline: none;
+}
+img {
+  border: 0;
+}
+:active,
+:focus {
+  outline: none;
+  -moz-outline-style: none;
+}
