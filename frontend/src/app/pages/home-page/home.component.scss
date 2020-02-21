@@ -3,11 +3,11 @@
 .page {
   //   height: 100vh;
 
+  background: white;
   //   background: #fea228;
-  background: linear-gradient(180deg, $bg-light 0%, $bg-dark 100%);
+  // background: linear-gradient(180deg, $bg-light 0%, $bg-dark 100%);
   animation: fadein 0.5s;
 }
-
 
 @keyframes fadein {
   from {
@@ -32,13 +32,12 @@
 }
 
 .section {
-  padding-bottom: 7em;
+  padding-top: 5em;
+  padding-bottom: 3em;
   z-index: 1000;
 }
 
 .content {
-  padding-top: 10em;
-
   h1 {
     color: white;
     text-shadow: 2px 2px 5px $bg-shadow;
@@ -47,4 +46,8 @@
     width: 100%;
     text-align: center;
   }
+}
+
+#solutions {
+  background: linear-gradient(180deg, #fff 0%, #ddd 100%);
 }

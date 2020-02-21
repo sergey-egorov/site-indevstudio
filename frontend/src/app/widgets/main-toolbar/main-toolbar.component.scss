@@ -4,6 +4,10 @@
   height: 40px;
 }
 
+.nav-link {
+  padding: 1em 1.5em !important;
+}
+
 .navbar-custom {
   // background-color: white;
   background: linear-gradient(175deg, #fff 0%, #eee);
@@ -22,7 +26,6 @@
   .navbar-nav .nav-link {
     color: darkgrey;
     font-size: 1em;
-    padding: 0 1em;
     transition: all 0.5s;
 
     &:hover {

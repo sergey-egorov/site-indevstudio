@@ -4,55 +4,53 @@
 
   <app-home-page-splash></app-home-page-splash>
 
-  <div class="content">
+  <!-- Solutions -->
+  <div #solutions class="section">
     <div class="container">
+      <h1>Solutions we Build</h1>
+      <br><br><br>
 
-      <!-- Solutions -->
-      <div class="section">
-        <h1>Solutions We Build</h1>
-        <br><br><br>
-
-        <div class="row">
-          <div class="col">
-            <app-devtype type="web" routerLink="/services"></app-devtype>
-          </div>
-
-          <div class="col">
-            <app-devtype type="mobile" routerLink="/services"></app-devtype>
-          </div>
+      <div class="row">
+        <div class="col">
+          <app-devtype type="web" routerLink="/services"></app-devtype>
         </div>
 
-        <div class="row">
-          <div class="col">
-            <app-devtype type="desktop" routerLink="/services"></app-devtype>
-          </div>
-
-          <div class="col">
-            <app-devtype type="system" routerLink="/services"></app-devtype>
-          </div>
+        <div class="col">
+          <app-devtype type="mobile" routerLink="/services"></app-devtype>
         </div>
       </div>
 
-      <!-- Services -->
-      <div class="section">
-        <h1>Services We Deliver</h1>
-        <br><br><br>
-
-        <div class="row">
-          <div class="col">
-            <app-devtype type="softdev" routerLink="/services"></app-devtype>
-          </div>
-
-          <div class="col">
-            <app-devtype type="integration" routerLink="/services"></app-devtype>
-          </div>
+      <div class="row">
+        <div class="col">
+          <app-devtype type="desktop" routerLink="/services"></app-devtype>
         </div>
 
+        <div class="col">
+          <app-devtype type="system" routerLink="/services"></app-devtype>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="section">
+    <div class="container">
+      <h1>Services We Deliver</h1>
+      <br><br><br>
+
+      <div class="row">
+        <div class="col">
+          <app-devtype type="softdev" routerLink="/services"></app-devtype>
+        </div>
+
+        <div class="col">
+          <app-devtype type="integration" routerLink="/services"></app-devtype>
+        </div>
       </div>
 
     </div>
+
   </div>
 </div>
 
 <app-home-contact-us></app-home-contact-us>
-

@@ -12,16 +12,22 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
 
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item" [ngClass]="{ 'active': page === 'home' }">
+        <!-- <li class="nav-item" [ngClass]="{ 'active': page === 'home' }">
           <a class="nav-link" routerLink="/home">Home
             <span class="sr-only">(current)</span>
           </a>
-        </li>
+        </li> -->
         <li class="nav-item" [ngClass]="{ 'active': page === 'services' }">
           <a class="nav-link" routerLink="/services">Services</a>
         </li>
         <li class="nav-item" [ngClass]="{ 'active': page === 'portfolio' }">
           <a class="nav-link" routerLink="/portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Technologies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our process</a>
         </li>
         <li class="nav-item" [ngClass]="{ 'active': page === 'contacts' }">
           <a class="nav-link" routerLink="/home">Contacts</a>

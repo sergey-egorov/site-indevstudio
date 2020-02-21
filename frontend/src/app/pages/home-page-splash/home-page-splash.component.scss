@@ -1,15 +1,14 @@
 @import "src/style/colors.scss";
 
 .splash {
-  height: 350px;
   // border: 1px solid blue;
-  // background: linear-gradient(165deg, $bg-dark 0%, $bg-light 70%, $bg-dark 120%);
+  background: linear-gradient(165deg, $bg-dark 0%, $bg-light 70%, $bg-dark 120%);
+  padding-bottom: 6vw;
 }
 
 .text {
   // border: 1px solid red;
   width: 100%;
-  height: max-content;
   position: relative;
 }
 
@@ -41,8 +40,8 @@
   color: $text-dark;
   white-space: nowrap;
 
-  margin-left: 40vw;
-  margin-top: -5vw;
+  margin-left: 35vw;
+  margin-top: -8vw;
   // font-weight: normal;
   // text-shadow: 2px 2px 5px $bg-shadow;
   text-shadow: none;
@@ -57,11 +56,11 @@
   // z-index: 10000;
   position: absolute;
 
-  // background: url("src/assets/img/dog.svg") left top no-repeat;
+  background: url("src/assets/img/dog.svg") left top no-repeat;
   // background: url("src/assets/img/robot-dog-sitting.png") left top no-repeat;
   // background: url("src/assets/img/robot-0-4.svg") left top no-repeat;
   // background: url("src/assets/img/robot-0-4-1.png") left top no-repeat;
-  background: url("src/assets/img/robot-0-1.svg") left top no-repeat;
+  // background: url("src/assets/img/robot-0-1.svg") left top no-repeat;
   // background: url("src/assets/img/robot-1-1.svg") left top no-repeat;
   // background: url("src/assets/img/robot-steam-3.svg") left top no-repeat;
   // background: url("src/assets/img/robot-steam-2.svg") left top no-repeat;
