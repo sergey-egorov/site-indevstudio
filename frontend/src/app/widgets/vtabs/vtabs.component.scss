@@ -10,7 +10,7 @@
 }
 
 h1 {
-  padding: 20pt;
+  padding: 20px;
   color: #999;
   // font-weight: bold;
   // text-shadow: 1pt 1pt 3pt #ccc;
@@ -22,12 +22,12 @@ img {
   height: 12em;
   // background: linear-gradient(170deg, $bg-light 0%, $bg-dark 100%);
   padding: 0.5em;
-  transition: all 1s;
+  transition: all 0.5s;
 
   &:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
     opacity: 1;
-    transition: all 1s;
+    transition: all 0.5s;
   }
 }
 
@@ -41,13 +41,13 @@ img {
   border-radius: 1em;
 
   background-color: transparent;
-  transition: all 1s;
+  transition: all 0.5s;
 
-  animation: fadein 1s;
+  animation: fadein 0.5s;
 }
 // .context:hover {
 //   background-color: #eee;
-//   transition: all 1s;
+//   transition: all 0.5s;
 //   transform: scale(1.1);
 // }
 
@@ -88,12 +88,12 @@ img {
   border: none !important;
 
   opacity: 0.8;
-  transition: all 1s;
+  transition: all 0.5s;
 
   &:hover {
     transform: scale(1.1);
     opacity: 1;
-    transition: all 1s;
+    transition: all 0.5s;
   }
 }
 
@@ -105,11 +105,11 @@ img {
   border-radius: 3em;
 
   width: auto;
-  height: 64pt;
+  height: 64px;
 
   background: none;
 
-  transition: all 1s;
+  transition: all 0.5s;
 
   .img {
     padding: 0;
@@ -117,8 +117,8 @@ img {
     float: left;
   }
   img {
-    width: 64pt;
-    height: 64pt;
+    width: 64px;
+    height: 64px;
   }
 
   .text {
@@ -126,7 +126,7 @@ img {
     padding: 0;
     padding-right: 2em;
     // border: 1px solid green;
-    height: 64pt;
+    height: 64px;
     vertical-align: middle;
     display: table-cell;
     width: 100%;
@@ -139,7 +139,7 @@ img {
 
   &:hover {
     background-color: #fea22833;
-    transition: all 1s;
+    transition: all 0.5s;
     transform: scale(1.1);
   }
 }

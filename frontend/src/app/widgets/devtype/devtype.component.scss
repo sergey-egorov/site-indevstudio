@@ -2,8 +2,8 @@
 
 img {
   border-radius: 50%;
-  width: 12em;
-  height: 12em;
+  width: 10vw;
+  height: 10vw;
   // background: linear-gradient(170deg, $bg-light 0%, $bg-dark 100%);
   padding: 0.5em;
 }
@@ -16,12 +16,12 @@ img {
   border-radius: 1em;
 
   background-color: transparent;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 .context:hover {
   // background-color: linear-gradient(170deg, $bg-dark 0%, $bg-light 100%);
   background-color: #fea22844;
-  transition: all 1s;
+  transition: all 0.5s;
   transform: scale(1.1);
 }
 
