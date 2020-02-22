@@ -3,6 +3,8 @@
 .splash {
   // border: 1px solid blue;
   background: linear-gradient(165deg, $bg-dark 0%, $bg-light 70%, $bg-dark 120%);
+  // background: url("src/assets/img/splash-0-1.png") left -2em no-repeat;
+  background-size: 100% 200%;
   padding-bottom: 6vw;
 }
 
@@ -56,11 +58,11 @@
   // z-index: 10000;
   position: absolute;
 
-  background: url("src/assets/img/dog.svg") left top no-repeat;
+  // background: url("src/assets/img/dog.svg") left top no-repeat;
   // background: url("src/assets/img/robot-dog-sitting.png") left top no-repeat;
   // background: url("src/assets/img/robot-0-4.svg") left top no-repeat;
   // background: url("src/assets/img/robot-0-4-1.png") left top no-repeat;
-  // background: url("src/assets/img/robot-0-1.svg") left top no-repeat;
+  background: url("src/assets/img/robot-0-1.svg") left top no-repeat;
   // background: url("src/assets/img/robot-1-1.svg") left top no-repeat;
   // background: url("src/assets/img/robot-steam-3.svg") left top no-repeat;
   // background: url("src/assets/img/robot-steam-2.svg") left top no-repeat;
