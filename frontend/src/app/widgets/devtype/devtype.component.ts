@@ -13,39 +13,39 @@ export class DevtypeComponent implements OnInit {
     'web': {
       title: 'Web',
       note: 'Interactive web apps for all occasions',
-      img: 'assets/img/web-black.svg',
-      imgsize: '12em',
+      img: 'assets/img/dev-bg-2.png',
+      imgsize: '100%',
     },
     'mobile': {
       title: 'Mobile',
       note: 'Mobile apps for work and entertainment',
-      img: 'assets/img/mobile.png',
+      img: 'assets/img/mobile-services-1.png',
       imgsize: '100%',
     },
     'desktop': {
-      title: 'Desktop',
-      note: 'Specialized desktop software for complex tasks',
-      img: 'assets/img/desktop-black.svg',
-      imgsize: '12em',
+      title: 'Complex',
+      note: 'Complex distributed systems for business',
+      img: 'assets/img/dev-bg-1.png',
+      imgsize: '100%',
     },
     'system': {
-      title: 'System',
-      note: 'Complex distributed systems for business',
-      img: 'assets/img/system-black.svg',
-      imgsize: '12em',
+      title: 'IoT',
+      note: 'Software for specialized devices',
+      img: 'assets/img/iot-1.png',
+      imgsize: '100%',
     },
 
     'softdev': {
       title: 'Software Development',
       note: 'Software development for any purpose',
-      img: 'assets/img/desktop-black.svg',
-      imgsize: '15em',
+      img: 'assets/img/dev-bg-1.png',
+      imgsize: '100%',
     },
     'integration': {
       title: 'Integration',
       note: 'Building complex software solutions from heterogeneous components',
-      img: 'assets/img/system-red.svg',
-      imgsize: '15em',
+      img: 'assets/img/dev-bg-2.png',
+      imgsize: '100%',
     }
 
   };

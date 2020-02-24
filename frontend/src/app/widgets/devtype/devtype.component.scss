@@ -1,6 +1,6 @@
 @import "src/style/colors.scss";
 
-$height: 300px;
+$height: 250px;
 
 .tile-container {
   width: 100%;
@@ -11,6 +11,28 @@ $height: 300px;
   position: relative;
 }
 
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: calc(100%);
+
+  // background-image: url("src/assets/img/dev-bg-1.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  filter: grayscale(1) contrast(90%) brightness(70%);
+  transition: all 0.5s;
+}
+
+.tile-container:hover .img {
+  filter: grayscale(0);
+  transition: all 0.5s;
+}
+
 .tile-img {
   position: absolute;
   top: 0;
@@ -19,7 +41,7 @@ $height: 300px;
   width: 100%;
   height: calc(100%);
 
-  background: url("src/assets/img/smartphone-1.png") left top no-repeat;
+  background: url("src/assets/img/dev-bg-1.png") left top no-repeat;
   background-size: 100% 100%;
 
   transition: all 0.5s;
@@ -46,14 +68,13 @@ $height: 300px;
   transition: all 0.5s;
 }
 
-
 .tile-text {
   position: absolute;
   top: 2em;
   // top: 0;
   left: 0;
   z-index: 1;
-  position: relative;
+  // position: relative;
 
   width: 50%;
   height: calc(100% - 4em);
@@ -62,16 +83,20 @@ $height: 300px;
 
   color: white;
   background: black;
-  opacity: 0.9;
+  opacity: 0.8;
   transition: all 0.5s;
 }
 
 .tile-container:hover .tile-text {
-  color: black;
+  // width: calc(100% - 2em);
+  width: 70%;
+  color: white;
   // background: radial-gradient(#ffffffdd, #ffffff);
-  background: white;
-  // backdrop-filter: blur(10px);
-  opacity: 0.8;
+  // background: #99999999;
+  background: transparent;
+  backdrop-filter: blur(50px) brightness(120%);
+  // backdrop-filter: blur(5px) brightness(50%);
+  opacity: 1;
   transition: all 0.5s;
 }
 
@@ -82,18 +107,18 @@ $height: 300px;
 //   transition: all 0.5s;
 // }
 
-
 .title {
-  position: absolute;
-  top: 0;
-  left: 0;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
 
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 28px;
 
   width: 100%;
-  height: 80px;
-  // color: white;
+  // height: 80px;
+  // color: $main-active-3;
+  color: $main-active-3;
   padding: 0.5em 1em;
 
   display: inline-flex;
@@ -101,12 +126,16 @@ $height: 300px;
 
   // background: linear-gradient(90deg, #000000ff, #000000cc);
   // background: black;
+  transition: all 0.5s;
+}
+.tile-container:hover .title {
+  color: white;
 }
 
 .text {
-  position: absolute;
-  top: 80px;
-  left: 0;
+  // position: absolute;
+  // top: 80px;
+  // left: 0;
 
   width: 100%;
   height: calc(100% - 80px);
@@ -114,4 +143,22 @@ $height: 300px;
   font-size: 14px;
   // color: #ddd;
   padding: 0.5em 2em;
+}
+
+.button {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+
+  background: $main-active;
+  color: white;
+  padding: 0.5em 1.5em;
+
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.tile-container:hover .button {
+  opacity: 1;
+  transition: all 0.5s;
 }
