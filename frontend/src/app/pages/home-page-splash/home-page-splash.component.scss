@@ -2,20 +2,77 @@
 
 .splash {
   // border: 1px solid blue;
-  background: linear-gradient(165deg, $bg-dark 0%, $bg-light 70%, $bg-dark 120%);
-  // background: url("src/assets/img/splash-0-1.png") left -2em no-repeat;
-  background-size: 100% 200%;
-  padding-bottom: 6vw;
-}
 
-.text {
-  // border: 1px solid red;
   width: 100%;
+  height: 550px;
+  background: url("src/assets/img/bg-main.png") left -2em no-repeat;
+  background-size: cover;
+  padding: 85px 0;
   position: relative;
 }
 
-.title {
-  // z-index: 1;
+.img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+  background: url("src/assets/img/bg-main.png") left -2em no-repeat;
+  background-size: cover;
+}
+
+.splash-overlay {
+  // border: 1px solid red;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+  background: black;
+
+  animation: overlay-keyframes 10s infinite;
+}
+
+.splash-text {
+  // border: 1px solid green;
+
+  width: 100%;
+  height: 100%;
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+
+  padding: 75px 3em;
+
+  // display: inline-block;
+}
+
+
+@keyframes overlay-keyframes {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.title-1 {
+  z-index: 1;
   // border: 1px solid green;
   // z-index: 1000;
   // position: absolute;
@@ -25,37 +82,27 @@
   // width: 100%;
   // font-size: 18em;
   // font-size: 60px;
-  font-size: 25vw;
+  font-size: 40px;
 
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  text-shadow: 0.01em 0.01em 0.03em $bg-shadow;
+  color: $main-active;
+  // text-shadow: 0.01em 0.01em 0.03em $bg-shadow;
+  // font-family: 'Circular Std Book';
 }
 
-.subtitle {
-  // z-index: 1;
-  // position: absolute;
+.title-2 {
+  font-size: 60px;
+  color: white;
+  font-family: 'Circular Std Book';
+  line-height: 1em;
+  padding: 45px 0;
+}
 
-  font-size: 2.8vw;
-  // text-align: left;
-  color: $text-dark;
-  white-space: nowrap;
-
-  margin-left: 35vw;
-  margin-top: -8vw;
-  // font-weight: normal;
-  // text-shadow: 2px 2px 5px $bg-shadow;
-  text-shadow: none;
-  animation: fadein-scale 1s;
-
-  // left: 16em;
-  // top: 11.5em;
-  font-weight: normal;
+.title-3 {
+  font-size: 27px;
+  color: #999;
 }
 
 .robot-0 {
-  // z-index: 10000;
   position: absolute;
 
   // background: url("src/assets/img/dog.svg") left top no-repeat;
@@ -88,30 +135,6 @@
   }
 }
 
-.robot-1 {
-  background: url("src/assets/img/robot-1.svg") left top no-repeat;
-  background-size: contain;
-  left: 0.2em;
-  top: 0.7em;
-  width: 0.8em;
-  height: 0.8em;
-
-  position: absolute;
-  // border: 1px solid red;
-  float: left;
-
-  opacity: 0;
-  // animation: robot-0 10s infinite;
-  // animation-delay: 5s;
-  animation: fadein-scale 1s;
-  transition: all 0.5s;
-
-  &:hover {
-    transform: scale(1.1);
-    transition: all 0.5s;
-  }
-}
-
 @keyframes robot-0 {
   0% {
     opacity: 0;
@@ -124,15 +147,6 @@
   }
   100% {
     opacity: 0;
-  }
-}
-
-@keyframes robot-1 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 

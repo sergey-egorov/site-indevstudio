@@ -14,7 +14,7 @@ export class MainToolbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.dark = this.page !== 'home';
+    // this.dark = this.page !== 'home';
   }
 
 }

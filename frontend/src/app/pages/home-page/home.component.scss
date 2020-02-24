@@ -48,12 +48,29 @@
   }
 }
 
-// #solutions {
-//   background: linear-gradient(160deg, #ccc 0%, #eee 100%);
-// }
+#development {
+  background: url("src/assets/img/bg-main-light.png") left top no-repeat;
+  background-size: cover;
+
+  h1 {
+    font-size: 32px;
+  }
+}
 
 #services {
-//  background: linear-gradient(160deg, #bbb 0%, #eee 100%);
-  background: url("src/assets/img/splash-0-2.png") left -2em no-repeat;
-  background-size: 100% 200%;
+  background: url("src/assets/img/bg-services-light.png") left top no-repeat;
+  background-size: cover;
+
+  h1 {
+    font-size: 32px;
+    color: white;
+  }
+}
+
+.tile {
+  padding: 0;
+  // padding-bottom: 1em;
+  // padding-right: 1em;
+  padding-bottom: 3px;
+  padding-right: 3px;
 }

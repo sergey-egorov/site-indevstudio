@@ -13,32 +13,32 @@ export class DevtypeComponent implements OnInit {
     'web': {
       title: 'Web',
       note: 'Interactive web apps for all occasions',
-      img: 'assets/img/web-red.svg',
+      img: 'assets/img/web-black.svg',
       imgsize: '12em',
     },
     'mobile': {
       title: 'Mobile',
       note: 'Mobile apps for work and entertainment',
-      img: 'assets/img/mobile-red.svg',
-      imgsize: '12em',
+      img: 'assets/img/mobile.png',
+      imgsize: '100%',
     },
     'desktop': {
       title: 'Desktop',
       note: 'Specialized desktop software for complex tasks',
-      img: 'assets/img/desktop-red.svg',
+      img: 'assets/img/desktop-black.svg',
       imgsize: '12em',
     },
     'system': {
       title: 'System',
       note: 'Complex distributed systems for business',
-      img: 'assets/img/system-red.svg',
+      img: 'assets/img/system-black.svg',
       imgsize: '12em',
     },
 
     'softdev': {
       title: 'Software Development',
       note: 'Software development for any purpose',
-      img: 'assets/img/desktop-red.svg',
+      img: 'assets/img/desktop-black.svg',
       imgsize: '15em',
     },
     'integration': {

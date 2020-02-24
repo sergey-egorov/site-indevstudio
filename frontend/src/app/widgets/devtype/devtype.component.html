@@ -1,15 +1,21 @@
 <ng-container *ngIf="data[type]">
+  <div class="tile-container">
+    <!-- <div class="img"> -->
+    <!-- <img [src]="data[type].img" [style.width]="data[type].imgsize" [style.height]="data[type].imgsize" /> -->
+    <!-- <img [src]="data[type].img"/> -->
+    <!-- </div> -->
 
-  <div class="context">
-    <div class="img">
-      <img [src]="data[type].img" [style.width]="data[type].imgsize" [style.height]="data[type].imgsize" />
-    </div>
-    <div class="text">
-      <h1>{{ data[type].title }}</h1>
-      <p>
-        {{ data[type].note }}
-      </p>
+    <!-- <div class="text-content"> -->
+    <!-- <div class="title">{{ data[type].title }}</div> -->
+    <!-- <div class="text">{{ data[type].note }}</div> -->
+    <!-- </div> -->
+
+    <div class="tile-img"></div>
+    <!-- <div class="tile-overlay"></div> -->
+
+    <div class="tile-text">
+      <div class="title">{{ data[type].title }}</div>
+      <div class="text">{{ data[type].note }}</div>
     </div>
   </div>
-
 </ng-container>
