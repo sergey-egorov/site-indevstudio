@@ -5,11 +5,44 @@
 
   width: 100%;
   height: 550px;
-  background: url("src/assets/img/bg-main.png") left -2em no-repeat;
-  background-size: cover;
+  // // background: url("src/assets/img/bg-main.png") left -2em no-repeat;
+  // background-size: cover;
+  background: black;
   padding: 85px 0;
   position: relative;
 }
+
+video {
+  position: absolute;
+  left: 45%;
+  bottom: 0;
+  z-index: 100;
+
+  animation: video-keyframes 17s infinite;
+}
+
+@keyframes video-keyframes {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  20% {
+    left: 0;
+  }
+  50% {
+    left: 45%;
+    opacity: 1;
+  }
+  90% {
+    left: 45%;
+    opacity: 1;
+  }
+  100% {
+    left: 45%;
+    opacity: 0;
+  }
+}
+
 
 .img {
   position: absolute;
@@ -17,8 +50,8 @@
   top: 0;
   z-index: 1;
 
-  background: url("src/assets/img/bg-main.png") left -2em no-repeat;
-  background-size: cover;
+  // background: url("src/assets/img/bg-main.png") left -2em no-repeat;
+  // background-size: cover;
 }
 
 .splash-overlay {
@@ -53,6 +86,8 @@
   z-index: 100;
 
   padding: 75px 3em;
+
+  // background-color: #00000033;
 
   // display: inline-block;
 }
