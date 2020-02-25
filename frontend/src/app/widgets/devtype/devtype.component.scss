@@ -103,8 +103,8 @@ $height: 250px;
   // height: calc(100%);
 
   color: white;
-  background: black;
-  opacity: 0.8;
+  background: #000000;
+  // opacity: 0.8;
   transition: all 0.5s;
 }
 
@@ -114,15 +114,15 @@ $height: 250px;
   color: white;
   // background: radial-gradient(#ffffffdd, #ffffff);
   // background: #99999999;
-  background: transparent;
+  background: #0288d199;
 
-  backdrop-filter: blur(50px) brightness(120%);
-  -webkit-backdrop-filter: blur(50px) brightness(120%);
-  -moz-backdrop-filter: blur(50px) brightness(120%);
-  -ms-backdrop-filter: blur(50px) brightness(120%);
+  // backdrop-filter: blur(50px) brightness(120%);
+  // -webkit-backdrop-filter: blur(50px) brightness(120%);
+  // -moz-backdrop-filter: blur(50px) brightness(120%);
+  // -ms-backdrop-filter: blur(50px) brightness(120%);
 
   // backdrop-filter: blur(5px) brightness(50%);
-  opacity: 1;
+  // opacity: 0.3;
   transition: all 0.5s;
 }
 
