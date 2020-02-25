@@ -28,6 +28,13 @@
   z-index: 100;
 }
 
+.video-0 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
 .video-1 {
   position: absolute;
   left: 45%;
@@ -127,7 +134,7 @@
 
   padding: 75px 3em;
 
-  // background-color: #00000033;
+  background-color: #00000044;
 
   // display: inline-block;
 }
