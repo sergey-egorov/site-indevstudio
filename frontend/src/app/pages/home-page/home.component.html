@@ -11,27 +11,17 @@
       <br><br><br>
 
       <div class="row">
-        <div class="col tile">
-          <app-devtype type="web" routerLink="/services"></app-devtype>
-        </div>
+        <ng-container *ngFor="let item of model; let i = index; let even = even">
+          <ng-container *ngIf="['web', 'mobile', 'complex', 'iot'].includes(item.id)">
+            <ng-container *ngIf="i > 0 && even">
+              <div class="break"></div>
+            </ng-container>
+            <div class="col-lg-6 tile">
+              <app-tile1 [item]="item" routerLink="/services"></app-tile1>
+            </div>
+          </ng-container>
+        </ng-container>
 
-        <div class="col tile">
-          <app-devtype type="mobile" routerLink="/services"></app-devtype>
-        </div>
-
-        <!-- <div class="col tile">
-          <app-devtype type="mobile" routerLink="/services"></app-devtype>
-        </div> -->
-      </div>
-
-      <div class="row">
-        <div class="col tile">
-          <app-devtype type="desktop" routerLink="/services"></app-devtype>
-        </div>
-
-        <div class="col tile">
-          <app-devtype type="system" routerLink="/services"></app-devtype>
-        </div>
       </div>
     </div>
   </div>
@@ -43,18 +33,20 @@
       <br><br><br>
 
       <div class="row">
-        <div class="col tile">
-          <app-devtype type="softdev" routerLink="/services"></app-devtype>
-        </div>
+        <ng-container *ngFor="let item of model; let i = index; let even = even">
+          <ng-container *ngIf="['ivr', 'chatbot'].includes(item.id)">
+            <ng-container *ngIf="i > 0 && even">
+              <div class="break"></div>
+            </ng-container>
+            <div class="col-lg-6 tile">
+              <app-tile1 [item]="item" routerLink="/services"></app-tile1>
+            </div>
+          </ng-container>
+        </ng-container>
 
-        <div class="col tile">
-          <app-devtype type="integration" routerLink="/services"></app-devtype>
-        </div>
       </div>
 
     </div>
-
   </div>
-</div>
 
-<app-home-contact-us></app-home-contact-us>
+  <app-home-contact-us></app-home-contact-us>

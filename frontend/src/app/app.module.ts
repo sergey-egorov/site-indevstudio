@@ -8,12 +8,10 @@ import { HomePageComponent } from './pages/home-page/home.component';
 import { PortfolioPageComponent } from './pages/portfolio-page/portfolio.component';
 import { ServicesPageComponent } from './pages/services-page/services.component';
 import { MainToolbarComponent } from './widgets/main-toolbar/main-toolbar.component';
-import { DevtypeComponent } from './widgets/devtype/devtype.component';
 import { HomeContactUsComponent } from './widgets/home-contact-us/home-contact-us.component';
 import { VTabsComponent } from './widgets/vtabs/vtabs.component';
-import { PTileComponent } from './widgets/ptile/ptile.component';
-import { Ptile2Component } from './widgets/ptile2/ptile2.component';
 import { HomePageSplashComponent } from './pages/home-page-splash/home-page-splash.component';
+import { Tile1Component } from './widgets/tile1/tile1.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +20,10 @@ import { HomePageSplashComponent } from './pages/home-page-splash/home-page-spla
     PortfolioPageComponent,
     ServicesPageComponent,
     MainToolbarComponent,
-    DevtypeComponent,
     HomeContactUsComponent,
     VTabsComponent,
-    PTileComponent,
-    Ptile2Component,
-    HomePageSplashComponent
+    HomePageSplashComponent,
+    Tile1Component
   ],
   imports: [
     BrowserModule,
