@@ -71,9 +71,13 @@ img {
 }
 
 .tech {
+  font-size: 0.8em;
+
   float: left;
-  color: white;
-  background: #039be5;
+  color: #039be5;
+  // background: white;
+  background: #039be522;
+  // border: 1px solid #039be5;
   padding: 3px 10px;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -84,8 +88,12 @@ img {
 
 .button {
   opacity: 1 !important;
-  background: $main-active;
+  background: $main-active-3;
   // border-radius: 10px;
   color: white;
   padding: 0.5em 1em;
+}
+
+hr {
+  margin: 2em 0;
 }

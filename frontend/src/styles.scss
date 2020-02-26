@@ -1,12 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
+// @import "./assets/font/Fontawesome/all.css";
+
 @import "./assets/font/CircularStd/stylesheet.css";
+@import "./assets/font/Roboto/roboto.css";
 
 @import "./style/colors.scss";
 
 * {
-  font-family: 'Circular Std', sans-serif;
-  font-size: 14px;
+  // font-family: 'Circular Std', sans-serif;
+  font-family: "Roboto Light", sans-serif;
+  font-size: 18px;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -27,13 +31,22 @@ img {
   -moz-outline-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Circular Std Book";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // font-family: "Circular Std Book";
+  font-family: "Roboto Light", sans-serif;
   font-weight: 300;
   // color: $main-active;
   color: $main-bg-1;
 }
 
-p, div {
+p,
+div {
   color: $main-text;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
