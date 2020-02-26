@@ -9,11 +9,10 @@
 
   width: 100%;
   height: 550px;
-  // // background: url("src/assets/img/bg-main.png") left -2em no-repeat;
-  // background-size: cover;
-  background: $main-bg-1;
+  background: url("src/assets/img/bg-main.png") left bottom no-repeat;
+  background-size: cover;
+  // background: $main-bg-1;
   position: relative;
-
   overflow: hidden;
 }
 
