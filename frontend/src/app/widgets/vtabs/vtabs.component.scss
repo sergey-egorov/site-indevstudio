@@ -17,7 +17,7 @@
 // }
 
 img {
-  border-radius: 50%;
+  // border-radius: 50%;
   width: 12em;
   height: 12em;
   // background: linear-gradient(170deg, $bg-light 0%, $bg-dark 100%);
@@ -38,7 +38,7 @@ img {
   padding-bottom: 1em;
   padding-right: 1em;
   cursor: pointer;
-  border-radius: 1em;
+  // border-radius: 1em;
 
   background-color: transparent;
   transition: all 0.5s;
@@ -80,7 +80,7 @@ img {
   margin-left: -1.5em;
 
   // border: 1px solid red;
-  border-radius: 3em;
+  border-radius: 5px;
 
   width: auto;
   height: 64px;
@@ -100,7 +100,7 @@ img {
   }
 
   .text {
-    color: $main-bg-1;
+    color: $light-grey; // $main-bg-1;
     padding: 0;
     padding-right: 2em;
     // border: 1px solid green;
@@ -108,11 +108,16 @@ img {
     vertical-align: middle;
     display: table-cell;
     width: 100%;
+    text-transform: uppercase;
   }
 
   &.active {
     background-color: #00bcd433;
-    transform: scale(1.1);
+    // transform: scale(1.1);
+  }
+  &.active .text {
+    color: #0097a7;
+    // transform: scale(1.1);
   }
 
   &:hover {
