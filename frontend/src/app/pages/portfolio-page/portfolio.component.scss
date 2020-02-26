@@ -15,25 +15,22 @@
 }
 
 h1 {
+  color: #546e7a;
   padding: 0.5em 0;
-  color: black;
-  // font-weight: bold;
-  // text-shadow: 2px 2px 5px #ccc;
 }
 
 h2 {
-  color: black;
   font-weight: bold;
   font-size: 2em;
   padding-left: 0;
-  padding-top: 0;
+  padding-top: 0.5em;
   padding-bottom: 0.5em;
   // text-shadow: 1pt 1pt 3pt #ccc;
 }
 
-p {
-  color: #666;
-}
+// p {
+//   color: #666;
+// }
 
 img {
   float: left;
@@ -70,7 +67,7 @@ img {
 .tech-block {
   width: 100%;
   clear: left;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 .tech {
@@ -79,7 +76,16 @@ img {
   background: #039be5;
   padding: 3px 10px;
   margin-right: 5px;
+  margin-bottom: 5px;
 
   border-radius: 2px;
   cursor: pointer;
+}
+
+.button {
+  opacity: 1 !important;
+  background: $main-active;
+  // border-radius: 10px;
+  color: white;
+  padding: 0.5em 1em;
 }

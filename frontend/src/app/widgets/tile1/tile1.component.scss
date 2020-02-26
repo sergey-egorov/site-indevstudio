@@ -24,19 +24,13 @@ $height: 250px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
-  filter: grayscale(1) contrast(90%) brightness(70%);
-  -webkit-filter: grayscale(1) contrast(90%) brightness(70%);
-  -moz-filter: grayscale(1) contrast(90%) brightness(70%);
-  -ms-filter: grayscale(1) contrast(90%) brightness(70%);
+  filter: grayscale(0.8) contrast(90%) brightness(70%);
 
   transition: all 0.5s;
 }
 
 .tile-container:hover .img {
   filter: grayscale(0);
-  -webkit-filter: grayscale(0);
-  -moz-filter: grayscale(0);
-  -ms-filter: grayscale(0);
 
   transition: all 0.5s;
 }
@@ -56,16 +50,10 @@ $height: 250px;
   // filter: grayscale(1) contrast(50%);
 
   filter: grayscale(1);
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(1);
-  -ms-filter: grayscale(1);
 }
 
 .tile-container:hover .tile-img {
   filter: grayscale(0);
-  -webkit-filter: grayscale(0);
-  -moz-filter: grayscale(0);
-  -ms-filter: grayscale(0);
 
   // filter: grayscale(0);
   transition: all 0.5s;
@@ -103,7 +91,7 @@ $height: 250px;
   // height: calc(100%);
 
   color: white;
-  background: #000000;
+  background: $main-bg-1-dark;
   // opacity: 0.8;
   transition: all 0.5s;
 }
@@ -127,7 +115,7 @@ $height: 250px;
 }
 
 // .tile-container:hover .tile-text .text {
-//   color: black;
+//   color: $main-bg-1;
 //   background: white;
 //   opacity: 1;
 //   transition: all 0.5s;
@@ -151,7 +139,7 @@ $height: 250px;
   vertical-align: middle;
 
   // background: linear-gradient(90deg, #000000ff, #000000cc);
-  // background: black;
+  // background: $main-bg-1;
   transition: all 0.5s;
 }
 .tile-container:hover .title {

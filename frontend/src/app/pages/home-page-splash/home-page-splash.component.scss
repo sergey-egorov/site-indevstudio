@@ -11,7 +11,7 @@
   height: 550px;
   // // background: url("src/assets/img/bg-main.png") left -2em no-repeat;
   // background-size: cover;
-  background: black;
+  background: $main-bg-1;
   padding: 85px 0;
   position: relative;
 
@@ -33,6 +33,20 @@
   left: 0;
   bottom: 0;
   z-index: 100;
+
+  opacity: 0.5;
+  // animation: video-0-keyframes 5s infinite;
+}
+@keyframes video-0-keyframes {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .video-1 {
@@ -54,7 +68,6 @@
 
   animation: video-2-keyframes 16s;
 }
-
 
 @keyframes video-1-keyframes {
   0% {
@@ -90,7 +103,6 @@
   }
 }
 
-
 .img {
   position: absolute;
   left: 0;
@@ -99,26 +111,6 @@
 
   // background: url("src/assets/img/bg-main.png") left -2em no-repeat;
   // background-size: cover;
-}
-
-.splash-overlay {
-  // border: 1px solid red;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 10;
-
-  width: 100%;
-  height: 100%;
-
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-
-  background: black;
-
-  animation: overlay-keyframes 10s infinite;
 }
 
 .splash-text {
@@ -133,190 +125,24 @@
   z-index: 100;
 
   padding: 75px 3em;
-
-  // background-color: #00000066;
-
-  // display: inline-block;
-
-  // animation: splash-text-keyframes 10s infinite;
-}
-
-@keyframes splash-text-keyframes {
-  0% {
-    background-color: #00000099;
-  }
-  50% {
-    background-color: #00000000;
-  }
-  100% {
-    background-color: #00000099;
-  }
-}
-
-
-@keyframes overlay-keyframes {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 .title-1 {
   z-index: 1;
-  // border: 1px solid green;
-  // z-index: 1000;
-  // position: absolute;
-
-  // top: -0;
-  // left: 0;
-  // width: 100%;
-  // font-size: 18em;
-  // font-size: 60px;
   font-size: 40px;
-
   color: $main-active;
-  // text-shadow: 0.01em 0.01em 0.03em $bg-shadow;
-  // font-family: 'Circular Std Book';
 }
 
 .title-2 {
+  font-family: "Circular Std Book";
   font-size: 60px;
   color: white;
-  font-family: "Circular Std Book";
   line-height: 1em;
   padding: 45px 0;
 }
 
 .title-3 {
+  font-family: "Circular Std Book";
   font-size: 27px;
-  color: #999;
-}
-
-.robot-0 {
-  position: absolute;
-
-  // background: url("src/assets/img/dog.svg") left top no-repeat;
-  // background: url("src/assets/img/robot-dog-sitting.png") left top no-repeat;
-  // background: url("src/assets/img/robot-0-4.svg") left top no-repeat;
-  // background: url("src/assets/img/robot-0-4-1.png") left top no-repeat;
-  background: url("src/assets/img/robot-0-1.svg") left top no-repeat;
-  // background: url("src/assets/img/robot-1-1.svg") left top no-repeat;
-  // background: url("src/assets/img/robot-steam-3.svg") left top no-repeat;
-  // background: url("src/assets/img/robot-steam-2.svg") left top no-repeat;
-  // background: url("src/assets/img/robot-test-3.png") left top no-repeat;
-  background-size: contain;
-  // margin-left: 8vw;
-  // margin-top: -15vw;
-  width: 16vw;
-  height: 16vw;
-  // display: flex;
-  left: 20vw;
-  top: 20vw;
-
-  // position: absolute;
-  // border: 1px solid red;
-
-  animation: fadein-scale 1s;
-  transition: all 0.5s;
-
-  &:hover {
-    transform: scale(1.1);
-    transition: all 0.5s;
-  }
-}
-
-@keyframes robot-0 {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-// Baloons
-// -------------------------
-
-.balloon {
-  background: linear-gradient(170deg, $bg-dark 0%, $bg-light 100%);
-  border-radius: 50%;
-  position: absolute;
-  z-index: 1;
-}
-
-.balloon.a1 {
-  animation: balloon1 30s infinite;
-}
-.balloon.a2 {
-  animation: balloon2 30s infinite;
-}
-// .balloon.a3 {
-//   animation: balloon3 30s infinite;
-// }
-
-$randomNumber: random(5);
-
-@keyframes balloon1 {
-  0% {
-    left: 50vw;
-    top: 60vh;
-    width: 10vw;
-    height: 10vw;
-    opacity: 0.1;
-  }
-  50% {
-    left: 60vw;
-    top: 50vh;
-    width: 20vw;
-    height: 20vw;
-    opacity: 0.5;
-  }
-  100% {
-    left: 50vw;
-    top: 60vh;
-    width: 10vw;
-    height: 10vw;
-    opacity: 0.1;
-  }
-}
-
-@keyframes balloon2 {
-  0% {
-    left: 10vw;
-    top: 30vh;
-    width: 30vw;
-    height: 30vw;
-    opacity: 0.1;
-  }
-  10% {
-    opacity: 0.3;
-  }
-  50% {
-    left: 60vw;
-    top: 50vh;
-    width: 10vw;
-    height: 10vw;
-    opacity: 0.2;
-  }
-  90% {
-    left: 10vw;
-    top: 30vh;
-    width: 30vw;
-    height: 30vw;
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 0.1;
-  }
+  color: #607d8b;
 }
