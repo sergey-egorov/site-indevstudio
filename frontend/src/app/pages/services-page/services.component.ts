@@ -13,7 +13,7 @@ export class ServicesPageComponent implements OnInit {
       {
         id: 'web',
         title: 'Web',
-        image: 'assets/img/web-red.svg',
+        image: 'assets/img/web-black.svg',
         textTitle: 'Web Applications',
         textFile: 'assets/html/services-web-en.html',
         textHtml: '',
@@ -21,7 +21,7 @@ export class ServicesPageComponent implements OnInit {
       {
         id: 'mobile',
         title: 'Mobile',
-        image: 'assets/img/mobile-red.svg',
+        image: 'assets/img/mobile-black.svg',
         textTitle: 'Mobile Applications',
         textFile: 'assets/html/services-mobile-en.html',
         textHtml: '',
@@ -29,7 +29,7 @@ export class ServicesPageComponent implements OnInit {
       {
         id: 'desktop',
         title: 'Desktop',
-        image: 'assets/img/desktop-red.svg',
+        image: 'assets/img/desktop-black.svg',
         textTitle: 'Desktop Applications',
         textFile: 'assets/html/services-desktop-en.html',
         textHtml: '',
@@ -37,7 +37,7 @@ export class ServicesPageComponent implements OnInit {
       {
         id: 'system',
         title: 'System',
-        image: 'assets/img/system-red.svg',
+        image: 'assets/img/system-black.svg',
         textTitle: 'System Applications',
         textFile: 'assets/html/services-system-en.html',
         textHtml: '',
@@ -50,7 +50,7 @@ export class ServicesPageComponent implements OnInit {
       {
         id: 'saas',
         title: 'SaaS',
-        image: 'assets/img/web-red.svg',
+        image: 'assets/img/web-black.svg',
         textTitle: 'SaaS Solutions',
         textFile: 'assets/html/services-saas-en.html',
         textHtml: '',
@@ -58,7 +58,7 @@ export class ServicesPageComponent implements OnInit {
       {
         id: 'ivr',
         title: 'IVR',
-        image: 'assets/img/web-red.svg',
+        image: 'assets/img/web-black.svg',
         textTitle: 'IVR Solution',
         textFile: 'assets/html/services-ivr-en.html',
         textHtml: '',
@@ -66,7 +66,7 @@ export class ServicesPageComponent implements OnInit {
       {
         id: 'processing',
         title: 'Processing',
-        image: 'assets/img/mobile-red.svg',
+        image: 'assets/img/mobile-black.svg',
         textTitle: 'Processing Solutions',
         textFile: 'assets/html/services-processing-en.html',
         textHtml: '',
@@ -74,7 +74,7 @@ export class ServicesPageComponent implements OnInit {
       {
         id: 'visualisation',
         title: 'Visualisation',
-        image: 'assets/img/desktop-red.svg',
+        image: 'assets/img/desktop-black.svg',
         textTitle: 'Visualisation Solutions',
         textFile: 'assets/html/services-visualisation-en.html',
         textHtml: '',

@@ -37,13 +37,13 @@ export class HomePageComponent implements OnInit {
     {
       id: 'ivr',
       title: 'Voice IVR',
-      note: 'Software development for any purpose',
+      note: 'Voice interactive services',
       img: 'assets/img/dev-bg-1.png',
     },
     {
       id: 'chatbot',
       title: 'Chatbot',
-      note: 'Building complex software solutions from heterogeneous components',
+      note: 'Intelligent chatbot services with AI',
       img: 'assets/img/dev-bg-2.png',
     }
   ];

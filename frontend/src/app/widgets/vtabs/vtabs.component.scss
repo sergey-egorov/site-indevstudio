@@ -9,12 +9,12 @@
   }
 }
 
-h1 {
-  padding: 20px;
-  color: #999;
-  // font-weight: bold;
-  // text-shadow: 1pt 1pt 3pt #ccc;
-}
+// h1 {
+//   // padding: 20px;
+//   // color: #999;
+//   // font-weight: bold;
+//   // text-shadow: 1pt 1pt 3pt #ccc;
+// }
 
 img {
   border-radius: 50%;
@@ -52,49 +52,27 @@ img {
 // }
 
 .text {
-  font-size: 1em;
-  color: #666;
+  // font-size: 1em;
+  // color: #666;
   padding-top: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
 
-  h2 {
-    color: $bg-light;
-    font-weight: bold;
-    font-size: 2em;
-    padding-left: 0;
-    padding-top: 0;
-    padding-bottom: 0.5em;
-    text-shadow: 1pt 1pt 3pt #ccc;
-  }
+  // h2 {
+  //   color: $bg-light;
+  //   font-weight: bold;
+  //   font-size: 2em;
+  //   padding-left: 0;
+  //   padding-top: 0;
+  //   padding-bottom: 0.5em;
+  //   text-shadow: 1pt 1pt 3pt #ccc;
+  // }
 
-  h3 {
-    color: $main-bg-1;
-    padding-bottom: 0.5em;
-    // font-weight: bold;
-  }
-}
-
-.button {
-  cursor: pointer;
-  background: linear-gradient(135deg, $bg-light 0%, $bg-dark 100%);
-  border-radius: 10px;
-  color: white !important;
-  padding: 0.5em 2em !important;
-  // width: 100%;
-  font-size: 1.2em;
-  color: white;
-
-  border: none !important;
-
-  opacity: 0.8;
-  transition: all 0.5s;
-
-  &:hover {
-    transform: scale(1.1);
-    opacity: 1;
-    transition: all 0.5s;
-  }
+  // h3 {
+  //   color: $main-bg-1;
+  //   padding-bottom: 0.5em;
+  //   // font-weight: bold;
+  // }
 }
 
 .devlink {
@@ -112,17 +90,17 @@ img {
   transition: all 0.5s;
 
   .img {
-    padding: 0;
-    padding-left: 0.5em;
+    padding: 0 0.5em;
     float: left;
   }
   img {
     width: 64px;
     height: 64px;
+    opacity: 0.5;
   }
 
   .text {
-    color: $bg-light;
+    color: $main-bg-1;
     padding: 0;
     padding-right: 2em;
     // border: 1px solid green;
@@ -133,13 +111,29 @@ img {
   }
 
   &.active {
-    background-color: #cccccc33;
+    background-color: #00bcd433;
     transform: scale(1.1);
   }
 
   &:hover {
-    background-color: #fea22833;
+    background-color: #99999933;
     transition: all 0.5s;
-    transform: scale(1.1);
+    // transform: scale(1.1);
   }
 }
+
+// a.button {
+//   background: $main-active;
+//   color: white;
+//   padding: 1em 1.5em;
+
+//   // opacity: 0;
+//   transition: all 0.5s;
+
+//   font-size: 0.8em;
+//   text-decoration: none;
+
+//   &:hover {
+//     filter: brightness(80%);
+//   }
+// }

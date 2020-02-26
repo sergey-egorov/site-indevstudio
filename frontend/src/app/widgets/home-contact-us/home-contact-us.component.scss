@@ -1,7 +1,8 @@
 @import "src/style/colors.scss";
 
 .content {
-  padding: 1em 2em;
+  // padding: 1em 2em;
+  color: $light-grey;
 }
 
 .white {
@@ -10,7 +11,10 @@
 
 .bottom {
   width: 100%;
-  background: #444;
+  // background: #444;
+  background: url("src/assets/img/bg-main.png") left top no-repeat;
+  background-size: cover;
+
   padding-top: 2em;
   padding-bottom: 5em;
   color: #999;
@@ -27,12 +31,44 @@
 }
 
 .button {
-  background: $main-active;
-  color: white !important;
+  background: $main-active-3;
+  color: $main-bg-1 !important;
   padding: 0.5em 2em !important;
   width: 100%;
   font-size: 1.2em;
   color: white;
 
   border: none !important;
+}
+
+.header-1 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  padding-top: 0;
+  padding-bottom: 2em;
+  i {
+    font-size: 38px;
+    color: #b0bec5; // $main-active-3;
+  }
+}
+
+.header-1-light {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  color: white;
+  i {
+    font-size: 38px;
+    color: #cfd8dc; // $light-grey;
+  }
+}
+
+input, textarea {
+  color: $light-grey;
+  background-color: $main-bg-1;
+  border-radius: 0;
+  border: 1px solid $light-grey;
 }
