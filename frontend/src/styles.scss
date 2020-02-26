@@ -61,6 +61,23 @@ a:active {
   color: $main-active;
 }
 
+.button-1 {
+  opacity: 1 !important;
+  background: $main-active;
+  // border-radius: 10px;
+  color: white;
+  padding: 0.5em 1em;
+  transition: all 0.5s;
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+    filter: brightness(80%);
+    transition: all 0.5s;
+  }
+}
+
+
 .button-2 {
   opacity: 1 !important;
   background: $main-active-3;
@@ -72,7 +89,7 @@ a:active {
   &:hover {
     text-decoration: none;
     color: white;
-    background: $main-bg-3;
+    filter: brightness(80%);
     transition: all 0.5s;
   }
 }
