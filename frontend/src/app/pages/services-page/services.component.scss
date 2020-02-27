@@ -1,16 +1,18 @@
 @import "src/style/colors.scss";
 
+$bg-light-grey: #eceff1;
+
 .page {
   // background: $main-bg-1;
-  background: #cfd8dc99;
-  // background: linear-gradient(270deg, $light-grey, white);
+  // background: #eee; // #cfd8dc99;
+  background: linear-gradient(90deg, $bg-light-grey, $bg-light-grey 40%, white 60%, white);
   // background: url("src/assets/img/bg-main-light.png") left top no-repeat;
   // background-size: cover;
 }
 
 .header-1 {
-  padding: 1em 0.5em;
-  font-size: 32px;
+  padding: 1em 0.3em;
+  // font-size: 32px;
 }
 
 hr {
@@ -38,6 +40,8 @@ li {
 
 .competencies-block {
   padding: 1em 0;
+  padding-right: 1em;
+  width: 100%;
 }
 
 .competence {
@@ -77,7 +81,7 @@ li {
 }
 
 #development {
-  background: #ffffff99;
+  background: $bg-light-grey;
   .competence {
     border: 1px solid #546e7a99; // $main-text;
     &:hover {
