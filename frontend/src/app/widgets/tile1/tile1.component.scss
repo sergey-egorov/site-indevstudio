@@ -92,7 +92,8 @@ $height: 250px;
 
   color: white;
   background: $main-bg-1-dark;
-  // opacity: 0.8;
+  // background: $main-bg-1;
+  // opacity: 0.9;
   transition: all 0.5s;
 }
 
@@ -103,6 +104,7 @@ $height: 250px;
   // background: radial-gradient(#ffffffdd, #ffffff);
   // background: #99999999;
   background: #0097a799;
+  opacity: 1;
 
   // backdrop-filter: blur(50px) brightness(120%);
   // -webkit-backdrop-filter: blur(50px) brightness(120%);

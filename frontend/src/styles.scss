@@ -68,12 +68,14 @@ a:active {
   color: white;
   padding: 0.5em 1em;
   transition: all 0.5s;
+  filter: opacity(90%);
 
   &:hover {
     text-decoration: none;
     color: white;
-    filter: brightness(80%);
+    filter: opacity(100%);
     transition: all 0.5s;
+    box-shadow: 2px 2px 7px #666;
   }
 }
 
