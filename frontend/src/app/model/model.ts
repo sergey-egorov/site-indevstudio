@@ -52,7 +52,83 @@ export const model = {
     },
 
     services: {
+      software_development: {
+        title: 'Software development',
+        items: [
+          {
+            title: 'Web development',
+            contentFile: 'assets/services/web-en.html',
+            content: '',
+            competencies: [
+              'Digital Commerce',
+              'Enterprise Web Solutions',
+              'Web Back Ends',
+              'Web Applications'
+            ],
+          },
+          {
+            title: 'Mobile development',
+            contentFile: 'assets/services/mobile-en.html',
+            content: '',
+            competencies: [
+              'Enterprise Mobile Apps',
+              'iPhone/iPad Solutions',
+              'Android Applications',
+              'Social Networking Apps',
+              'Cross-Platform Solutions'
+            ],
+          },
+          {
+            title: 'Complex',
+            contentFile: 'assets/services/complex-en.html',
+            content: '',
+            competencies: [
+              'System analysis',
+              'Design & UI',
+              'Development',
+              'QA & Testing',
+              'Staff Augmentation',
+              'Deployment',
+              'Integration'
+            ],
+          },
+          {
+            title: 'IoT',
+            contentFile: 'assets/services/iot-en.html',
+            content: '',
+            competencies: [
+              'Raspberry Pi Apps',
+              'On-board system Apps'
+            ],
+          }
+        ]
+      },
 
+      client_services: {
+        title: 'Client services',
+        items: [
+          {
+            title: 'Voice IVR',
+            contentFile: 'assets/services/ivr-en.html',
+            content: '',
+            competencies: [
+              'Speech recognition',
+              'Speech syntesis',
+              'VoIP',
+              'Natural language processing'
+            ],
+          },
+          {
+            title: 'Chatbot',
+            contentFile: 'assets/services/chatbot-en.html',
+            content: '',
+            competencies: [
+              'Natural language processing',
+              'Artificial intelligence'
+            ],
+          }
+        ]
+      }
     },
 
     portfolio: {

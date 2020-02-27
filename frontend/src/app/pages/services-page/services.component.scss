@@ -1,69 +1,91 @@
 @import "src/style/colors.scss";
 
 .page {
-  animation: fadein 0.5s;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  // background: $main-bg-1;
+  background: #cfd8dc99;
+  // background: linear-gradient(270deg, $light-grey, white);
+  // background: url("src/assets/img/bg-main-light.png") left top no-repeat;
+  // background-size: cover;
 }
 
 .header-1 {
-  padding: 1em 0;
+  padding: 1em 0.5em;
+  font-size: 32px;
 }
 
 hr {
-  margin: 1em 0;
-  margin-bottom: 2em;
+  margin: 0;
+  margin-bottom: 1em;
 }
 
 h1 {
-  padding: 20px;
-  color: #999;
-  // font-weight: bold;
-  // text-shadow: 1pt 1pt 3pt #ccc;
-}
-
-h2 {
-  color: $bg-light;
-  font-weight: bold;
-  font-size: 2em;
-  padding-left: 0;
+  font-size: 28px;
+  text-transform: uppercase;
   padding-top: 0;
-  padding-bottom: 0.5em;
-  text-shadow: 1pt 1pt 3pt #ccc;
+  padding-bottom: 1em;
+  color: $main-active;
 }
 
-// .header-1 {
-//   font-size: 40px;
-//   font-weight: bold;
-//   letter-spacing: 5px;
-//   padding-top: 1em;
-//   padding-bottom: 0.5em;
-//   i {
-//     font-size: 38px;
-//     // color: $light-grey;
-//     opacity: 0.5;
-//   }
+p,
+ul,
+li {
+  line-height: 1.5em;
+}
+
+// p.text {
+//   min-height: 300px;
 // }
 
-img {
-  float: left;
-  border-radius: 50%;
-  width: 12em;
-  height: 12em;
-  // background: linear-gradient(170deg, $bg-light 0%, $bg-dark 100%);
-  padding: 0.5em;
-  transition: all 0.5s;
+.competencies-block {
+  padding: 1em 0;
+}
+
+.competence {
+  padding: 0.7em 1.5em;
+  border: 1px solid $light-grey;
+  margin-top: -1px;
+  text-transform: capitalize;
+  font-size: 0.85em;
+  color: $main-text;
+  opacity: 0.7;
+
+  .bullet {
+    padding: 0 1em;
+    display: inline-block;
+  }
+  .text {
+    display: inline-block;
+  }
+
+  i {
+    // color: $main-active-3;
+    font-size: 0.7em;
+    opacity: 0.5;
+    padding-bottom: 0.5em;
+  }
 
   &:hover {
-    transform: scale(1.1);
+    background: #cfd8dc99;
+    cursor: pointer;
     opacity: 1;
-    transition: all 0.5s;
+
+    i {
+      color: $main-active;
+      opacity: 1;
+    }
   }
+}
+
+#development {
+  background: #ffffff99;
+  .competence {
+    border: 1px solid #546e7a99; // $main-text;
+    &:hover {
+      background: #b0bec599;
+    }
+  }
+}
+
+#services {
+  background: white;
 }

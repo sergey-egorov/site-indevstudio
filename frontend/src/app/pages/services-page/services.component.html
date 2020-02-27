@@ -4,60 +4,97 @@
 
   <div class="container">
 
-    <br>
-    <!-- <h1>Services We Deliver</h1> -->
-
     <div class="context">
 
-      <div class="header-1"><span class="nowrap">S<i class="fas fa-globe"></i>FTWARE</span> DEVELOPMENT</div>
-      <hr>
-      <br>
+      <div class="row">
 
-      <!-- <div class="img">
-        <img src="assets/img/robot-1-flat-red.svg" style="width: 150px; height: 150px;">
-      </div> -->
-      <div class="text">
-        <!-- <br>
-        <br>
-        <h2>Software Development</h2>
 
-        <p>Software development for any purpose</p>
-        <br> -->
+        <div id="development" class="col-lg-6">
 
-        <app-vtabs [viewData]="DevelopmentTypesViewData"></app-vtabs>
+          <div class="header-1">SOFTWARE<br>DEVELOPMENT</div>
+          <hr>
+
+          <ng-container
+            *ngFor="let item of model.pages.services.software_development.items; let i = index; let even = even">
+
+            <!-- <ng-container *ngIf="i > 0 && even">
+              <div class="break"></div>
+            </ng-container> -->
+
+            <div class="col-lg-12 p-3">
+
+              <!-- <app-tile1 [item]="item"></app-tile1> -->
+              <h1>{{ item.title }}</h1>
+              <p [innerHTML]="item.content"></p>
+
+              <div class="competencies-block">
+                <ng-container *ngFor="let competence of item.competencies">
+                  <div class="competence">
+                    <div class="row">
+                      <div class="bullet">
+                        <i class="fas fa-circle"></i>
+                      </div>
+                      <div class="text">
+                        {{ competence }}
+                      </div>
+                    </div>
+                  </div>
+                </ng-container>
+                <div class="break"></div>
+              </div>
+
+            </div>
+
+          </ng-container>
+        </div>
+
+
+        <div id="services" class="col-lg-6">
+
+          <div class="context">
+            <div class="header-1">CLIENT<br>SERVICES</div>
+            <hr>
+
+            <div class="row">
+              <ng-container
+                *ngFor="let item of model.pages.services.client_services.items; let i = index; let even = even">
+
+                <!-- <ng-container *ngIf="i > 0 && even">
+                  <div class="break"></div>
+                </ng-container> -->
+                <div class="col-lg-12 p-3">
+
+                  <!-- <app-tile1 [item]="item"></app-tile1> -->
+                  <h1>{{ item.title }}</h1>
+                  <p class="text" [innerHTML]="item.content"></p>
+
+                  <div class="competencies-block">
+                    <ng-container *ngFor="let competence of item.competencies">
+                      <div class="competence">
+                        <div class="row">
+                          <div class="col-1">
+                            <i class="fas fa-circle"></i>
+                          </div>
+                          <div class="col-10">
+                            {{ competence }}
+                          </div>
+                        </div>
+                      </div>
+                    </ng-container>
+                    <div class="break"></div>
+                  </div>
+
+                </div>
+              </ng-container>
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
+
     </div>
-    <br>
-    <br>
-
-
-    <!----------------->
-    <!-- Integration -->
-    <!----------------->
-
-    <div class="context">
-      <!-- <div class="img">
-        <img src="assets/img/robot-2-flat-red.svg" style="width: 150px; height: 150px;">
-      </div> -->
-
-      <div class="header-1">CLIENT <span class="nowrap">SERV<i class="fas fa-info-circle"></i>CES</span></div>
-      <hr>
-      <br>
-
-      <div class="text">
-        <!-- <br>
-        <br>
-        <h2>Client Services</h2>
-
-        <p>Software development for any purpose</p>
-        <br> -->
-
-        <app-vtabs [viewData]="DevelopmentDirectionsViewData"></app-vtabs>
-
-      </div>
-    </div>
-
 
   </div>
 

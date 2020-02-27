@@ -5,7 +5,7 @@
 
   // cursor: pointer;
 
-  background: #000a1233;
+  background: transparent;
   padding: 1em 0;
   padding-right: 1em;
 
@@ -13,7 +13,7 @@
   transition: all 0.5s;
 
   &:hover {
-    background: #000a1299;
+    background: #000a1233;
     // background: #00bcd433;
     transition: all 0.5s;
   }
