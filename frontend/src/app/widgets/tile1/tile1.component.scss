@@ -4,7 +4,7 @@ $height: 250px;
 
 .tile-container {
   width: 100%;
-  height: $height;
+  min-height: $height;
 
   cursor: pointer;
 
@@ -79,19 +79,19 @@ $height: 250px;
 
 .tile-text {
   position: absolute;
-  top: 2em;
-  // top: 0;
+  // top: 2em;
+  top: 0;
   left: 0;
   z-index: 1;
   // position: relative;
 
   width: 50%;
-  height: calc(100% - 4em);
+  height: calc(100%); // calc(100% - 4em);
   // width: 100%;
   // height: calc(100%);
 
   color: white;
-  background: $main-bg-1-dark;
+  background: #263238cc; // $main-bg-1-dark;
   // background: $main-bg-1;
   // opacity: 0.9;
   transition: all 0.5s;
@@ -99,7 +99,7 @@ $height: 250px;
 
 .tile-container:hover .tile-text {
   // width: calc(100% - 2em);
-  width: 70%;
+  width: 80%;
   color: white;
   // background: radial-gradient(#ffffffdd, #ffffff);
   // background: #99999999;
@@ -160,6 +160,7 @@ $height: 250px;
   // color: white;
   color: $light-grey;
   padding: 0.5em 2em;
+  padding-bottom: 4em;
   transition: all 0.5s;
 }
 

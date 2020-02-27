@@ -1,7 +1,8 @@
 @import "src/style/colors.scss";
 
 .tile-container {
-  height: 270px;
+  min-height: 270px;
+
   cursor: pointer;
   background: #000a1233;
   padding: 1em 0;
@@ -17,7 +18,7 @@
 }
 
 img {
-  width: 200px;
+  max-width: 200px;
   // margin-top: -30px;
 }
 
@@ -29,7 +30,8 @@ img {
 
 .text {
   color: $light-grey;
-  padding: 1em 0;
+  padding: 1em;
+  padding-bottom: 4em;
 }
 
 .button-1 {
