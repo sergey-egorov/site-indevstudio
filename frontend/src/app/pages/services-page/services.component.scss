@@ -13,8 +13,13 @@
   }
 }
 
+.header-1 {
+  padding: 1em 0;
+}
+
 hr {
-  margin: 2em 0;
+  margin: 1em 0;
+  margin-bottom: 2em;
 }
 
 h1 {
@@ -34,18 +39,18 @@ h2 {
   text-shadow: 1pt 1pt 3pt #ccc;
 }
 
-.header-1 {
-  font-size: 40px;
-  font-weight: bold;
-  letter-spacing: 5px;
-  padding-top: 1em;
-  padding-bottom: 0.5em;
-  i {
-    font-size: 38px;
-    // color: $light-grey;
-    opacity: 0.5;
-  }
-}
+// .header-1 {
+//   font-size: 40px;
+//   font-weight: bold;
+//   letter-spacing: 5px;
+//   padding-top: 1em;
+//   padding-bottom: 0.5em;
+//   i {
+//     font-size: 38px;
+//     // color: $light-grey;
+//     opacity: 0.5;
+//   }
+// }
 
 img {
   float: left;

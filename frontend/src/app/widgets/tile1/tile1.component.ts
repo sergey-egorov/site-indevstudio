@@ -1,12 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-export class Tile1Data {
-  id: string;
-  title: string;
-  note: string;
-  img: string;
-};
-
 @Component({
   selector: 'app-tile1',
   templateUrl: './tile1.component.html',
@@ -14,7 +7,7 @@ export class Tile1Data {
 })
 export class Tile1Component implements OnInit {
 
-  @Input() item: Tile1Data;
+  @Input() item;
 
   constructor() { }
 

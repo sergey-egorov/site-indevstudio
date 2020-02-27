@@ -12,6 +12,7 @@ import { HomeContactUsComponent } from './widgets/home-contact-us/home-contact-u
 import { VTabsComponent } from './widgets/vtabs/vtabs.component';
 import { HomePageSplashComponent } from './pages/home-page-splash/home-page-splash.component';
 import { Tile1Component } from './widgets/tile1/tile1.component';
+import { Tile2Component } from './widgets/tile2/tile2.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { Tile1Component } from './widgets/tile1/tile1.component';
     HomeContactUsComponent,
     VTabsComponent,
     HomePageSplashComponent,
-    Tile1Component
+    Tile1Component,
+    Tile2Component
   ],
   imports: [
     BrowserModule,

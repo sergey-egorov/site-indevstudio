@@ -79,7 +79,6 @@ a:active {
   }
 }
 
-
 .button-2 {
   opacity: 1 !important;
   background: $main-active-3;
@@ -98,4 +97,36 @@ a:active {
 
 hr {
   margin: 2em 0;
+}
+
+.header-1, .header-1 span {
+  color: $main-text;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 1.2em;
+  padding: 2em 0;
+  text-transform: uppercase;
+  i {
+    font-size: 38px;
+    opacity: 0.5;
+  }
+}
+
+.header-1-light, .header-1-light span {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 1.2em;
+  padding: 2em 0;
+  text-transform: uppercase;
+  i {
+    font-size: 38px;
+    opacity: 0.5;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
 }

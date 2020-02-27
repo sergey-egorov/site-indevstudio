@@ -8,18 +8,16 @@
   <div id="development" class="section">
     <div class="container">
       <!-- <h1>SOFTWARE DEVELOPMENT</h1> -->
-      <div class="header-1">SOFTWARE DEVELOPMENT</div>
+      <div class="header-1">{{ model.pages.home.software_development.title }}</div>
 
       <div class="row">
-        <ng-container *ngFor="let item of model; let i = index; let even = even">
-          <ng-container *ngIf="['web', 'mobile', 'complex', 'iot'].includes(item.id)">
-            <ng-container *ngIf="i > 0 && even">
-              <div class="break"></div>
-            </ng-container>
-            <div class="col-lg-6 tile">
-              <app-tile1 [item]="item" routerLink="/services"></app-tile1>
-            </div>
+        <ng-container *ngFor="let item of model.pages.home.software_development.items; let i = index; let even = even">
+          <ng-container *ngIf="i > 0 && even">
+            <div class="break"></div>
           </ng-container>
+          <div class="col-lg-6 p-3">
+            <app-tile1 [item]="item" routerLink="/services"></app-tile1>
+          </div>
         </ng-container>
 
       </div>
@@ -29,19 +27,16 @@
   <!-- Services -->
   <div id="services" class="section">
     <div class="container">
-      <!-- <h1>CLIENT SERVICES</h1> -->
-      <div class="header-1-light">CLIENT SERVICES</div>
+      <div class="header-1-light">{{ model.pages.home.client_services.title }}</div>
 
       <div class="row">
-        <ng-container *ngFor="let item of model; let i = index; let even = even">
-          <ng-container *ngIf="['ivr', 'chatbot'].includes(item.id)">
-            <ng-container *ngIf="i > 0 && even">
-              <div class="break"></div>
-            </ng-container>
-            <div class="col-lg-6 tile">
-              <app-tile1 [item]="item" routerLink="/services"></app-tile1>
-            </div>
+        <ng-container *ngFor="let item of model.pages.home.client_services.items; let i = index; let even = even">
+          <ng-container *ngIf="i > 0 && even">
+            <div class="break"></div>
           </ng-container>
+          <div class="col-lg-6 p-3">
+            <app-tile2 [item]="item" routerLink="/services"></app-tile2>
+          </div>
         </ng-container>
 
       </div>

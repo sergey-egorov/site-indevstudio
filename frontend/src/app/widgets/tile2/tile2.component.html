@@ -1,0 +1,16 @@
+<ng-container *ngIf="item && item.id">
+  <div class="tile-container">
+
+    <!-- <div class="img" [style.background-image]="'url(' + item.img + ')'">
+    </div> -->
+
+    <img [src]="item.img" align="left">
+
+    <div class="tile-text">
+      <div class="title">{{ item.title }}</div>
+      <div class="text">{{ item.note }}</div>
+
+      <a class="button-1" routerLink="/services">Read more ></a>
+    </div>
+  </div>
+</ng-container>

@@ -38,6 +38,11 @@
 
   opacity: 0.3;
   // animation: video-0-keyframes 5s infinite;
+
+  width: 100vw;
+  height: 100vh;
+  // position: fixed;
+  object-fit: cover;
 }
 @keyframes video-0-keyframes {
   0% {
@@ -139,8 +144,9 @@
   // text-align: left;
 
   position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .title-1 {
