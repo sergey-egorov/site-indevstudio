@@ -56,6 +56,43 @@ export const model = {
     },
 
     portfolio: {
+      solutions: [
+        {
+          title: 'GUI tool for editing, testing and simulating Colored Petri Nets',
+          technologies: ['Javascript', 'Angular', 'Electron', 'Java', 'Springboot'],
+          contentFile: 'assets/portfolio/cpn-ide/index-en.html',
+          content: '',
+          img: 'assets/portfolio/cpn-ide/screen-1.png'
+        },
+        {
+          title: 'Smartphone diagnostic applications and automated trade-in service',
+          technologies: ['iOS', 'Android', 'Javascript', 'Angular', 'Java', 'Springboot'],
+          contentFile: 'assets/portfolio/tradein/index-en.html',
+          content: '',
+          img: 'assets/portfolio/tradein/screen-1.png'
+        },
+        {
+          title: 'Automatic subtitle generator',
+          technologies: ['Speech recognition', 'Media stream processing', 'Javascript', 'Angular', 'Java', 'Springboot'],
+          contentFile: 'assets/portfolio/subtitle/index-en.html',
+          content: '',
+          img: 'assets/portfolio/subtitle/screen-1.png'
+        },
+        {
+          title: 'Voice IVR for water delivery company',
+          technologies: ['Java', 'Springboot', 'Asterisk', 'C++'],
+          contentFile: 'assets/portfolio/ivr-water/index-en.html',
+          content: '',
+          img: 'assets/portfolio/ivr-water/screen-1.png'
+        },
+        {
+          title: 'Speech processing cloud service frontend',
+          technologies: ['Javascript', 'Angular', 'Java', 'Springboot'],
+          contentFile: 'assets/portfolio/stc-cloud/index-en.html',
+          content: '',
+          img: 'assets/portfolio/stc-cloud/screen-1.png'
+        },
+      ]
 
     }
   }
