@@ -1,7 +1,7 @@
 <div class="splash">
   <div class="video-container">
-
-    <video class="video-0" autoplay loop width="100%">
+    <video id="videoElement" class="video-0" playsinline autoplay muted loop width="100%"
+    (canplaythrough)="startPlayback()">
       <source src="assets/img/black-stars.mp4" />
     </video>
     <!-- <video class="video-0" autoplay loop height="100%">
@@ -23,14 +23,13 @@
     <div class="container splash-text-container">
       <div class="title-1">INDEV</div>
       <div class="title-2">
-        Software Development<br>
+        Software Development<br />
         Company
       </div>
       <div class="title-3">
-        We create intelligent Solutions<br>
+        We create intelligent Solutions<br />
         for Startups and Enterprises
       </div>
     </div>
   </div>
-
 </div>
