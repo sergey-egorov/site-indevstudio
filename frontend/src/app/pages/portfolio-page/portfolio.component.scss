@@ -1,9 +1,5 @@
 @import "src/style/colors.scss";
 
-hr {
-  margin: 2em 0;
-}
-
 h1 {
   color: #546e7a;
   padding: 0.5em 0;
@@ -18,9 +14,13 @@ h2 {
   // text-shadow: 1pt 1pt 3pt #ccc;
 }
 
+hr {
+  margin-bottom: 2em;
+}
+
 .header-1 {
-  padding-top: 1em;
-  padding-bottom: 0.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
 }
 
 
