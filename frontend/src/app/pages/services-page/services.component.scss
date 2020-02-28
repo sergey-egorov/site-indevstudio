@@ -3,9 +3,10 @@
 $bg-light-grey: #eceff1;
 
 .page {
+  // background: $bg-light-grey;
   // background: $main-bg-1;
   // background: #eee; // #cfd8dc99;
-  background: linear-gradient(90deg, $bg-light-grey, $bg-light-grey 40%, white 60%, white);
+  // background: linear-gradient(90deg, $bg-light-grey, $bg-light-grey 40%, white 60%, white);
   // background: url("src/assets/img/bg-main-light.png") left top no-repeat;
   // background-size: cover;
 }
@@ -17,7 +18,7 @@ $bg-light-grey: #eceff1;
 
 hr {
   margin: 0;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 h1 {
@@ -25,7 +26,15 @@ h1 {
   text-transform: uppercase;
   padding-top: 0;
   padding-bottom: 1em;
+  padding-left: 0.5em;
   color: $main-active;
+}
+
+.row {
+  margin: 0;
+}
+.row.p-1 {
+  margin-bottom: 2em;
 }
 
 p,
@@ -40,7 +49,7 @@ li {
 
 .competencies-block {
   padding: 0;
-  padding-right: 2em;
+  // padding-right: 2em;
   // padding-left: 1em;
   width: 100%;
   // border-left: 5px solid $light-grey; // $main-active;
@@ -92,15 +101,25 @@ li {
   }
 }
 
+.row.development {
+  background: $bg-light-grey;
+  padding-bottom: 2em;
+}
+
 #development {
   background: $bg-light-grey;
   .competence {
     margin-bottom: 7px;
-    background: #ffffff99;
+    background: white;
     &:hover {
       background: #b0bec599;
     }
   }
+}
+
+.row.services {
+  background: white;
+  padding-bottom: 2em;
 }
 
 #services {
