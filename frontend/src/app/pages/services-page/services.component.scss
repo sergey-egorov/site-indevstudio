@@ -39,21 +39,27 @@ li {
 // }
 
 .competencies-block {
-  padding: 1em 0;
-  padding-right: 1em;
+  padding: 0;
+  padding-right: 2em;
+  // padding-left: 1em;
   width: 100%;
+  // border-left: 5px solid $light-grey; // $main-active;
+  // margin-bottom: 5px;
 }
 
 .competence {
   padding: 0.7em 1.5em;
-  border: 1px solid $light-grey;
+  // border: 1px solid $light-grey;
   margin-top: -1px;
+  // margin-bottom: 7px;
+  box-shadow: 2px 2px 3px #ccc;
+
   text-transform: capitalize;
   font-size: 0.85em;
   color: $main-text;
   opacity: 0.7;
   transition: all 1s;
-  background: #ffffff99;
+  background: #cfd8dc33;
 
   .bullet {
     padding: 0 1em;
@@ -68,6 +74,7 @@ li {
     font-size: 0.7em;
     opacity: 0.5;
     padding-bottom: 0.5em;
+    padding-right: 0.5em;
     transition: all 1s;
   }
 
@@ -89,7 +96,8 @@ li {
 #development {
   background: $bg-light-grey;
   .competence {
-    border: 1px solid #546e7a99; // $main-text;
+    margin-bottom: 7px;
+    background: #ffffff99;
     &:hover {
       background: #b0bec599;
     }
@@ -97,5 +105,8 @@ li {
 }
 
 #services {
+  .competence {
+    margin-bottom: 10px;
+  }
   background: white;
 }

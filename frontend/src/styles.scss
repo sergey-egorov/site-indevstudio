@@ -102,7 +102,8 @@ hr {
 
 .header-1,
 .header-1 span {
-  color: $main-text;
+  // color: $main-text;
+  color: $main-text-light;
   font-size: 40px;
   font-weight: normal;
   letter-spacing: 5px;
