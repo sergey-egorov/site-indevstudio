@@ -20,7 +20,8 @@ h1 {
   // text-transform: uppercase;
   padding-top: 0.5em;
   padding-bottom: 1.5em;
-  color: $main-text-dark;
+  color: block; // $main-text-dark;
+  // font-weight: bold;
 }
 
 hr {

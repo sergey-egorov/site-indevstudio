@@ -22,20 +22,18 @@
   background-size: cover;
   // background: $light-grey;
 
-  h1 {
-    font-size: 32px;
+  .header-1 {
+    color: $main-text;
+    padding-bottom: 1.5em;
   }
 }
 
 #services {
   background: $main-bg-1;
 
-  h1 {
-    font-size: 32px;
+  .header-1 {
     color: white;
+    padding-bottom: 1.5em;
   }
 }
 
-.header-1, .header-1-light {
-  padding-bottom: 1.5em;
-}

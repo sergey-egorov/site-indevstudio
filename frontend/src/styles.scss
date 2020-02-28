@@ -102,26 +102,11 @@ hr {
 
 .header-1,
 .header-1 span {
-  // color: $main-text;
-  color: $main-text-light;
+  color: $main-text;
+  // color: $main-text-light;
   font-size: 40px;
   font-weight: normal;
   letter-spacing: 5px;
-  line-height: 1.2em;
-  padding: 2em 0;
-  text-transform: uppercase;
-  i {
-    font-size: 38px;
-    opacity: 0.5;
-  }
-}
-
-.header-1-light,
-.header-1-light span {
-  color: white;
-  font-size: 40px;
-  font-weight: normal;
-  letter-spacing: 3px;
   line-height: 1.2em;
   padding: 2em 0;
   text-transform: uppercase;
