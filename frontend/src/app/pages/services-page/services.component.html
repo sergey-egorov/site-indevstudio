@@ -1,11 +1,11 @@
 <app-main-toolbar page="services"></app-main-toolbar>
 
 <div class="page">
+  <div class="container">
 
-  <div class="row development">
-    <div class="container">
-
+    <div class="row">
       <div id="development" class="col-lg-12">
+
         <div class="header-1">SOFTWARE<br />DEVELOPMENT</div>
         <hr>
 
@@ -13,99 +13,33 @@
             let item of model.pages.services.software_development.items;
             let i = index;
             let even = even">
-          <!-- <ng-container *ngIf="i > 0 && even">
-              <div class="break"></div>
-            </ng-container> -->
-
-          <div class="row p-0">
-
-            <div class="row">
-              <h1>{{ item.title }}</h1>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-6">
-                <p [innerHTML]="item.content"></p>
-              </div>
-
-              <div class="col-lg-6">
-                <div class="competencies-block">
-                  <ng-container *ngFor="let competence of item.competencies">
-                    <div class="competence">
-                      <div class="row">
-                        <div class="bullet">
-                          <i class="fas fa-square"></i>
-                        </div>
-                        <div class="text">
-                          {{ competence }}
-                        </div>
-                      </div>
-                    </div>
-                  </ng-container>
-                  <div class="break"></div>
-                </div>
-              </div>
-            </div>
-
-          </div>
+          <ng-container *ngIf="i > 0 && even">
+            <div class="break"></div>
+          </ng-container>
+          <app-tile3 [item]="item"></app-tile3>
         </ng-container>
+
       </div>
-
     </div>
-  </div>
 
-  <div class="row services">
-    <div class="container">
-
+    <div class="row">
       <div id="services" class="col-lg-12">
+
         <div class="header-1">CLIENT<br />SERVICES</div>
         <hr />
 
-        <div class="row">
-          <ng-container *ngFor="
+        <ng-container *ngFor="
               let item of model.pages.services.client_services.items;
               let i = index;
               let even = even">
-            <!-- <ng-container *ngIf="i > 0 && even">
-                  <div class="break"></div>
-                </ng-container> -->
-
-            <div class="row p-0">
-
-              <div class="row">
-                <h1>{{ item.title }}</h1>
-              </div>
-
-              <div class="row">
-                <div class="col-lg-6">
-                  <p class="text" [innerHTML]="item.content"></p>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="competencies-block">
-                    <ng-container *ngFor="let competence of item.competencies">
-                      <div class="competence">
-                        <div class="row">
-                          <div class="bullet">
-                            <i class="fas fa-square"></i>
-                          </div>
-                          <div class="text">
-                            {{ competence }}
-                          </div>
-                        </div>
-                      </div>
-                    </ng-container>
-                    <div class="break"></div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
+          <ng-container *ngIf="i > 0 && even">
+            <div class="break"></div>
           </ng-container>
-        </div>
+          <app-tile3 [item]="item"></app-tile3>
+        </ng-container>
+
       </div>
     </div>
-  </div>
 
+  </div>
 </div>

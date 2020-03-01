@@ -1,0 +1,97 @@
+@import "src/style/colors.scss";
+
+hr {
+  margin: 0;
+  margin-bottom: 2em;
+}
+
+h1 {
+  font-size: 28px;
+  text-transform: uppercase;
+  padding-top: 0;
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  color: $main-active;
+}
+
+.row {
+  margin: 0;
+}
+.row.p-0 {
+  margin-bottom: 2em;
+}
+
+p,
+ul,
+li {
+  line-height: 1.5em;
+}
+
+// p.text {
+//   min-height: 300px;
+// }
+
+.competencies-block {
+  padding: 0;
+  // padding-right: 2em;
+  // padding-left: 1em;
+  width: 100%;
+  // border-left: 5px solid $light-grey; // $main-active;
+}
+
+.competence {
+  padding: 0.7em 1.2em;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 3px #ccc;
+
+  text-transform: capitalize;
+  font-size: 0.85em;
+  color: $main-text-dark;
+  opacity: 0.9;
+  transition: all 1s;
+  background: #cfd8dc33;
+
+  .bullet {
+    padding: 0;
+    padding-right: 0.8em;
+    display: inline-block;
+  }
+  .text {
+    display: inline-block;
+    text-transform: uppercase;
+    padding-top: 6px;
+    font-size: 0.8em;
+  }
+
+  i {
+    color: $main-active-3;
+    font-size: 0.7em;
+    // opacity: 0.7;
+    padding: 0;
+    padding-bottom: 0.7em;
+    transition: all 1s;
+  }
+
+  &:hover {
+    background: #cfd8dc99;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.5s;
+    box-shadow: 2px 2px 5px #ccc;
+    color: $main-active;
+
+    i {
+      color: $main-active;
+      opacity: 1;
+      transition: all 0.5s;
+    }
+  }
+}
+
+.competence.dark {
+  margin-bottom: 7px;
+  background: white;
+  &:hover {
+    background: #b0bec599;
+  }
+}

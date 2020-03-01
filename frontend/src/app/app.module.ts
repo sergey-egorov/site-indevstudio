@@ -13,6 +13,7 @@ import { VTabsComponent } from './widgets/vtabs/vtabs.component';
 import { HomePageSplashComponent } from './pages/home-page-splash/home-page-splash.component';
 import { Tile1Component } from './widgets/tile1/tile1.component';
 import { Tile2Component } from './widgets/tile2/tile2.component';
+import { Tile3Component } from './widgets/tile3/tile3.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { Tile2Component } from './widgets/tile2/tile2.component';
     VTabsComponent,
     HomePageSplashComponent,
     Tile1Component,
-    Tile2Component
+    Tile2Component,
+    Tile3Component
   ],
   imports: [
     BrowserModule,
