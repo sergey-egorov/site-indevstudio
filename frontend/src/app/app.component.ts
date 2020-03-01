@@ -1,5 +1,9 @@
-import { ModelService } from './services/model.service';
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+
+import { environment } from '../environments/environment';
+
+import { ModelService } from './services/model.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +13,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'frontend';
 
-  constructor(private modelService: ModelService) {
+  constructor(
+    private translateService: TranslateService,
+    private modelService: ModelService) {
+
+    this.translateService.use(environment.defaultLocale);
     this.modelService.loadContent();
   }
 }

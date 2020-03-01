@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { model } from './../../model/model';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-portfolio',
@@ -13,7 +14,7 @@ export class PortfolioPageComponent implements OnInit {
 
   model = model;
 
-  constructor() { }
+  constructor(public translate: TranslateService) { }
 
   ngOnInit() {
   }

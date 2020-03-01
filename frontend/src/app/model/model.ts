@@ -57,8 +57,8 @@ export const model = {
         items: [
           {
             title: 'Web development',
-            contentFile: 'assets/services/web-en.html',
-            content: '',
+            contentFile: { en: 'assets/services/web-en.html', ru: 'assets/services/web-ru.html' },
+            content: { en: '', ru: '' },
             competencies: [
               'Digital Commerce',
               'Enterprise Web Solutions',
@@ -68,8 +68,8 @@ export const model = {
           },
           {
             title: 'Mobile development',
-            contentFile: 'assets/services/mobile-en.html',
-            content: '',
+            contentFile: { en: 'assets/services/mobile-en.html', ru: 'assets/services/mobile-ru.html' },
+            content: { en: '', ru: '' },
             competencies: [
               'Enterprise Mobile Apps',
               'iPhone/iPad Solutions',
@@ -80,8 +80,8 @@ export const model = {
           },
           {
             title: 'Complex',
-            contentFile: 'assets/services/complex-en.html',
-            content: '',
+            contentFile: { en: 'assets/services/complex-en.html', ru: 'assets/services/complex-ru.html' },
+            content: { en: '', ru: '' },
             competencies: [
               'System analysis',
               'Design & UI',
@@ -94,8 +94,8 @@ export const model = {
           },
           {
             title: 'IoT',
-            contentFile: 'assets/services/iot-en.html',
-            content: '',
+            contentFile: { en: 'assets/services/iot-en.html', ru: 'assets/services/iot-ru.html' },
+            content: { en: '', ru: '' },
             competencies: [
               'Raspberry Pi Apps',
               'On-board system Apps'
@@ -109,8 +109,8 @@ export const model = {
         items: [
           {
             title: 'Voice IVR',
-            contentFile: 'assets/services/ivr-en.html',
-            content: '',
+            contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
+            content: { en: '', ru: '' },
             competencies: [
               'Speech recognition',
               'Speech syntesis',
@@ -120,8 +120,8 @@ export const model = {
           },
           {
             title: 'Chatbot',
-            contentFile: 'assets/services/chatbot-en.html',
-            content: '',
+            contentFile: { en: 'assets/services/chatbot-en.html', ru: 'assets/services/chatbot-ru.html' },
+            content: { en: '', ru: '' },
             competencies: [
               'Natural language processing',
               'Artificial intelligence'
@@ -136,36 +136,36 @@ export const model = {
         {
           title: 'GUI tool for editing, testing and simulating Colored Petri Nets',
           technologies: ['Javascript', 'Angular', 'Electron', 'Java', 'Springboot'],
-          contentFile: 'assets/portfolio/cpn-ide/index-en.html',
-          content: '',
+          contentFile: { en: 'assets/portfolio/cpn-ide/index-en.html', ru: 'assets/portfolio/cpn-ide/index-ru.html' },
+          content: { en: '', ru: '' },
           img: 'assets/portfolio/cpn-ide/screen-1.png'
         },
         {
           title: 'Smartphone diagnostic applications and automated trade-in service',
           technologies: ['iOS', 'Android', 'Javascript', 'Angular', 'Java', 'Springboot'],
-          contentFile: 'assets/portfolio/tradein/index-en.html',
-          content: '',
+          contentFile: { en: 'assets/portfolio/tradein/index-en.html', ru: 'assets/portfolio/tradein/index-ru.html' },
+          content: { en: '', ru: '' },
           img: 'assets/portfolio/tradein/screen-1.png'
         },
         {
           title: 'Automatic subtitle generator',
           technologies: ['Speech recognition', 'Media stream processing', 'Javascript', 'Angular', 'Java', 'Springboot'],
-          contentFile: 'assets/portfolio/subtitle/index-en.html',
-          content: '',
+          contentFile: { en: 'assets/portfolio/subtitle/index-en.html', ru: 'assets/portfolio/subtitle/index-ru.html' },
+          content: { en: '', ru: '' },
           img: 'assets/portfolio/subtitle/screen-1.png'
         },
         {
           title: 'Voice IVR for water delivery company',
           technologies: ['Java', 'Springboot', 'Asterisk', 'C++'],
-          contentFile: 'assets/portfolio/ivr-water/index-en.html',
-          content: '',
+          contentFile: { en: 'assets/portfolio/ivr-water/index-en.html', ru: 'assets/portfolio/ivr-water/index-ru.html' },
+          content: { en: '', ru: '' },
           img: 'assets/portfolio/ivr-water/screen-1.png'
         },
         {
           title: 'Speech processing cloud service frontend',
           technologies: ['Javascript', 'Angular', 'Java', 'Springboot'],
-          contentFile: 'assets/portfolio/stc-cloud/index-en.html',
-          content: '',
+          contentFile: { en: 'assets/portfolio/stc-cloud/index-en.html', ru: 'assets/portfolio/stc-cloud/index-ru.html' },
+          content: { en: '', ru: '' },
           img: 'assets/portfolio/stc-cloud/screen-1.png'
         },
       ]

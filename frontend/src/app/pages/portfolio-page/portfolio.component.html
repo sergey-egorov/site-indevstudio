@@ -21,7 +21,7 @@
           </div>
 
           <br>
-          <p [innerHTML]="solution.content">
+          <p [innerHTML]="solution.content[translate.currentLang] || solution.content['en']">
           </p>
           <br>
 

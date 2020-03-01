@@ -6,7 +6,7 @@
 
   <div class="row">
     <div class="col-lg-6">
-      <p [innerHTML]="item.content"></p>
+      <p [innerHTML]="item.content[translate.currentLang] || item.content['en']"></p>
     </div>
 
     <div class="col-lg-6">

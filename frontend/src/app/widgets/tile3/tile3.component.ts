@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-tile3',
@@ -10,7 +11,7 @@ export class Tile3Component implements OnInit {
   @Input() item;
   @Input() inverse = false;
 
-  constructor() { }
+  constructor(public translate: TranslateService) { }
 
   ngOnInit() {
   }

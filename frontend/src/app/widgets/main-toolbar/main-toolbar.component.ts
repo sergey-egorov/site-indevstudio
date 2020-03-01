@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main-toolbar',
@@ -11,10 +12,21 @@ export class MainToolbarComponent implements OnInit {
 
   dark = false;
 
-  constructor() { }
+  constructor(private translate: TranslateService) { }
 
   ngOnInit() {
     // this.dark = this.page !== 'home';
   }
+
+  toggleLanguage(language: string) {
+    if (language === 'ru') {
+      this.translate.use('ru')
+      this.translate.currentLang = 'ru'
+    } else if (language === 'en'){
+      this.translate.use('en')
+      this.translate.currentLang = 'en'
+    }
+  }
+
 
 }

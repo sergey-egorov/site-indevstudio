@@ -1,0 +1,47 @@
+{
+    "MAIN": {
+        "COMPANY_NAME": "INTELLECTUAL DEVELOPMENT",
+        "COMPANY_DESC": "We develop intellectual systems",
+        "WRITE_US": "Contact us"
+    },
+
+    "main-menu": {
+        "services": "Services",
+        "portfolio": "Portfolio",
+        "contacts": "Contacts"
+    },
+    
+    "side-menu": {
+        "start": "Main",
+        "services": "Services",
+        "tech": "Technologies",
+        "write-us": "Contacts"
+    },
+
+    "contacts": {
+        "header": "Contact us",
+        "text": "Please, fill in the form below and we will contact you soon.",
+        "address": "Address",
+        "city": "Saint-Petersburg,",
+        "metro": "Narvskaya metro station,",
+        "street": "Ploshchad' Stachek 9,",
+        "building": "Business-centre 'Kirovsky univermag'",
+        "mail": "E-mail",
+        "phone": "Phone",
+        "user-name": "Your name",
+        "user-email": "E-mail",
+        "theme": "Subject",
+        "task": "Project description",
+        "send": "Send",
+        "nameError": "Too short: Enter minimum of '2' characters",
+        "emailError": "Not a valid email address",
+        "textError": "Fill in this field",
+        "charCount": "Characters remaining:",
+        "popUp": "Your message has been sent"       
+
+    },
+
+    "footer": {
+        "copyright": "All rights reserved."
+    }
+}

@@ -18,46 +18,27 @@ export class ModelService {
     console.log(this.constructor.name, 'loadContent()');
 
     // load services content (software_development)
-    for (const item of this.model.pages.services.software_development.items) {
-      if (item.contentFile) {
-        this.restService.getFile(item.contentFile).then(
-          (response) => {
-            item.content = response.toString();
-          },
-          (error) => {
-            console.error(this.constructor.name, 'loadContent(), error = ', error);
-          }
-        );
-      }
-    }
 
-    // load services content (client_services)
-    for (const item of this.model.pages.services.client_services.items) {
-      if (item.contentFile) {
-        this.restService.getFile(item.contentFile).then(
-          (response) => {
-            item.content = response.toString();
-          },
-          (error) => {
-            console.error(this.constructor.name, 'loadContent(), error = ', error);
-          }
-        );
-      }
-    }
+    for (const itemList
+      of
+      [this.model.pages.services.software_development.items,
+      this.model.pages.services.client_services.items,
+      this.model.pages.portfolio.solutions])
 
-    // load portfolio content
-    for (const solution of this.model.pages.portfolio.solutions) {
-      if (solution.contentFile) {
-        this.restService.getFile(solution.contentFile).then(
-          (response) => {
-            solution.content = response.toString();
-          },
-          (error) => {
-            console.error(this.constructor.name, 'loadContent(), error = ', error);
+      for (const item of itemList) {
+        if (item.contentFile) {
+          for (const locale in item.contentFile) {
+            this.restService.getFile(item.contentFile[locale]).then(
+              (response) => {
+                item.content[locale] = response.toString();
+              },
+              (error) => {
+                console.error(this.constructor.name, 'loadContent(), error = ', error);
+              }
+            );
           }
-        );
+        }
       }
-    }
   }
 
 }

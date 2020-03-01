@@ -20,25 +20,34 @@
           </a>
         </li> -->
         <li class="nav-item" [ngClass]="{ 'active': page === 'services' }">
-          <a class="nav-link" routerLink="/services">Services</a>
+          <a class="nav-link" routerLink="/services">{{ 'main-menu.services' | translate }}</a>
         </li>
         <li class="nav-item" [ngClass]="{ 'active': page === 'portfolio' }">
-          <a class="nav-link" routerLink="/portfolio">Portfolio</a>
+          <a class="nav-link" routerLink="/portfolio">{{ 'main-menu.portfolio' | translate }}</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#">Technologies</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Our process</a>
-        </li>
+        </li> -->
         <li class="nav-item" [ngClass]="{ 'active': page === 'contacts' }">
-          <a class="nav-link" routerLink="/home">Contacts</a>
+          <a class="nav-link" routerLink="/home">{{ 'main-menu.contacts' | translate }}</a>
         </li>
       </ul>
 
       <ul class="navbar-nav ml-auto">
+        <li class="nav-item" [ngClass]="{ 'active': translate.currentLang === 'en' }">
+          <div class="nav-link lang" (click)="toggleLanguage('en')">EN</div>
+        </li>
+        <li class="nav-item" [ngClass]="{ 'active': translate.currentLang === 'ru' }">
+          <div class="nav-link lang" (click)="toggleLanguage('ru')">RU</div>
+        </li>
+
         <li class="nav-item">
-          <a class="nav-link button" routerLink="/home">Get in touch</a>
+          <div class="nav-link">
+            <a class="button" routerLink="/home">Get in touch</a>
+          </div>
         </li>
       </ul>
 
