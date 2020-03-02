@@ -32,24 +32,27 @@ li {
 // }
 
 .competencies-block {
+  display: inline;
   padding: 0;
   // padding-right: 2em;
   // padding-left: 1em;
-  width: 100%;
+  width: auto;
   // border-left: 5px solid $light-grey; // $main-active;
 }
 
 .competence {
-  padding: 0.7em 1.2em;
+  padding: 0.5em 0.5em;
+  margin-right: 10px;
   margin-bottom: 10px;
   box-shadow: 2px 2px 3px #ccc;
 
   text-transform: capitalize;
   font-size: 0.85em;
-  color: $main-text-dark;
+  color: $main-active-3; // $main-text-dark;
   opacity: 0.9;
   transition: all 1s;
   background: #cfd8dc33;
+  white-space: nowrap;
 
   .bullet {
     padding: 0;

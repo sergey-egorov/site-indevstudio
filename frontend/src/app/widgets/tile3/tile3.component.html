@@ -1,32 +1,36 @@
 <div class="row p-0">
-
   <div class="row">
     <h1>{{ item.title }}</h1>
   </div>
 
   <div class="row">
     <div class="col-lg-6">
-      <p [innerHTML]="item.content[translate.currentLang] || item.content['en']"></p>
+      <!-- <h1>{{ item.title }}</h1> -->
+      <p
+        [innerHTML]="item.content[translate.currentLang] || item.content['en']"
+      ></p>
     </div>
 
     <div class="col-lg-6">
       <div class="competencies-block">
-        <ng-container *ngFor="let competence of item.competencies">
-          <div class="competence" [ngClass]="{'dark': inverse}">
-            <div class="row">
-              <div class="bullet">
-                <!-- <i class="fas fa-square"></i> -->
-                <i class="fas fa-circle"></i>
-              </div>
-              <div class="text">
-                {{ competence }}
+        <div class="row">
+          <ng-container *ngFor="let competence of item.competencies">
+            <div class="competence" [ngClass]="{ dark: inverse }">
+              <div class="col">
+                <div class="nowrap">
+                  <!-- <div class="bullet">
+                    <i class="fas fa-circle"></i>
+                  </div> -->
+                  <div class="text">
+                    {{ competence }}
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </ng-container>
+          </ng-container>
+        </div>
         <div class="break"></div>
       </div>
     </div>
   </div>
-
 </div>
