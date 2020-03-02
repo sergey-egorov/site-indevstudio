@@ -22,4 +22,15 @@ export class ServicesExtPageComponent implements OnInit {
     this.itemList = this.itemList.concat(model.pages.services.client_services.items);
   }
 
+  getCompetencies(competenceIdList) {
+    const result = [];
+    for (const competenceId of competenceIdList) {
+      let competence = this.model.competencies.find(c => c.id === competenceId);
+      if (competence) {
+        result.push(competence);
+      }
+    }
+    return result;
+  }
+
 }

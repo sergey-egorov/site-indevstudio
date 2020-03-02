@@ -20,21 +20,31 @@
 
         <ng-container *ngFor="let item of itemList">
 
-          <ng-container *ngIf="item.id === selected">
+          <div class="direction-content" [ngClass]="{'visible': item.id === selected}">
             <div class="header-1">{{ item.titleExt }}</div>
             <hr>
 
             <p [innerHTML]="item.content[translate.currentLang] || item.content['en']"></p>
             <br>
+            <br>
 
-            <ng-container *ngFor="let competence of item.competencies">
-              <div class="competence">
-                <h2> {{ competence }} </h2>
-                <hr>
+            <ng-container *ngFor="let competence of getCompetencies(item.competencies)">
+
+              <div class="competence row" *ngIf="competence">
+                <div class="col-lg-2">
+                  <img [src]="competence.img">
+                </div>
+
+                <div class="col-lg-10">
+                  <h2> {{ competence.id }} </h2>
+                  <hr>
+                  <p [innerHTML]="competence.content[translate.currentLang] || competence.content['en']"></p>
+                  <br>
+                </div>
               </div>
             </ng-container>
 
-          </ng-container>
+          </div>
 
         </ng-container>
       </div>

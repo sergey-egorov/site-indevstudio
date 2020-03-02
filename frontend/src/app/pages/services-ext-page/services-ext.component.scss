@@ -1,5 +1,14 @@
 @import "src/style/colors.scss";
 
+.direction-content {
+  display: none;
+
+  &.visible {
+    display: block;
+    animation: fadein 0.5s;
+  }
+}
+
 .header-1 {
   padding: 1.5em 0;
 }
@@ -20,6 +29,7 @@ hr {
   padding-bottom: 1em;
   text-align: right;
   cursor: pointer;
+  color: $main-text-light;
 
   &.active {
     color: $main-active;
@@ -28,11 +38,19 @@ hr {
 
 .competence {
   & h2 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 300;
+    // color: black; 
+    color: $main-active-3;
+    text-transform: uppercase;
   }
-  hr {
-    margin: 0;
-    margin-bottom: 1em;
+  & hr {
+    margin: 2em 0;
+  }
+
+  & img {
+    width: 140px;
+    padding-right: 2em;
+    padding-bottom: 2em;
   }
 }

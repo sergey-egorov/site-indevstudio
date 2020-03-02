@@ -17,13 +17,13 @@ export class ModelService {
   loadContent() {
     console.log(this.constructor.name, 'loadContent()');
 
-    // load services content (software_development)
-
-    for (const itemList
-      of
-      [this.model.pages.services.software_development.items,
+    // load content from contentFile items
+    for (const itemList of [
+      this.model.pages.services.software_development.items,
       this.model.pages.services.client_services.items,
-      this.model.pages.portfolio.solutions])
+      this.model.pages.portfolio.solutions,
+      this.model.competencies
+    ]) {
 
       for (const item of itemList) {
         if (item.contentFile) {
@@ -39,6 +39,8 @@ export class ModelService {
           }
         }
       }
+
+    }
   }
 
 }

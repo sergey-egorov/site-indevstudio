@@ -183,6 +183,75 @@ export const model = {
       ]
 
     }
-  }
+  },
+
+  // 'Digital Commerce',
+  // 'Enterprise Web Solutions',
+  // 'Web Back Ends',
+  // 'Web Applications'
+  // 'Enterprise Mobile Apps',
+  // 'iPhone/iPad Solutions',
+  // 'Android Applications',
+  // 'Social Networking Apps',
+  // 'Cross-Platform Solutions'
+  // 'System analysis',
+  // 'Design & UI',
+  // 'Development',
+  // 'QA & Testing',
+  // 'Staff Augmentation',
+  // 'Deployment',
+  // 'Integration'
+
+  competencies: [
+    {
+      id: 'Digital Commerce',
+      contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/dig-commerce.png'
+    },
+    {
+      id: 'Enterprise Web Solutions',
+      contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/enterprise.png'
+    },
+    {
+      id: 'Web Back Ends',
+      contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/web-backs.png'
+    },
+    {
+      id: 'Web Applications',
+      contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/web-apps.png'
+    },
+
+    {
+      id: 'Speech recognition',
+      contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/dig-commerce.png'
+    },
+    {
+      id: 'Speech syntesis',
+      contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/dig-commerce.png'
+    },
+    {
+      id: 'VoIP',
+      contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/dig-commerce.png'
+    },
+    {
+      id: 'Natural language processing',
+      contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/dig-commerce.png'
+    },
+  ],
 
 };
