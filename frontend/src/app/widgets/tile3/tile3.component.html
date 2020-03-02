@@ -9,24 +9,25 @@
       <p
         [innerHTML]="item.content[translate.currentLang] || item.content['en']"
       ></p>
+      <a class="more" routerLink="/services-ext">Read more ></a>
     </div>
 
     <div class="col-lg-6">
       <div class="competencies-block">
         <div class="row">
           <ng-container *ngFor="let competence of item.competencies">
-            <div class="competence" [ngClass]="{ dark: inverse }">
+            <a class="competence" [ngClass]="{ dark: inverse }" routerLink="/services-ext">
               <div class="col">
                 <div class="nowrap">
-                  <!-- <div class="bullet">
+                  <div class="bullet">
                     <i class="fas fa-circle"></i>
-                  </div> -->
+                  </div>
                   <div class="text">
                     {{ competence }}
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </ng-container>
         </div>
         <div class="break"></div>

@@ -56,7 +56,9 @@ export const model = {
         title: 'Software development',
         items: [
           {
-            title: 'Web development',
+            id: 'web',
+            title: 'Web',
+            titleExt: 'Web development',
             contentFile: { en: 'assets/services/web-en.html', ru: 'assets/services/web-ru.html' },
             content: { en: '', ru: '' },
             competencies: [
@@ -67,7 +69,9 @@ export const model = {
             ],
           },
           {
-            title: 'Mobile development',
+            id: 'mobile',
+            title: 'Mobile',
+            titleExt: 'Mobile development',
             contentFile: { en: 'assets/services/mobile-en.html', ru: 'assets/services/mobile-ru.html' },
             content: { en: '', ru: '' },
             competencies: [
@@ -79,7 +83,9 @@ export const model = {
             ],
           },
           {
+            id: 'complex',
             title: 'Complex',
+            titleExt: 'Complex development',
             contentFile: { en: 'assets/services/complex-en.html', ru: 'assets/services/complex-ru.html' },
             content: { en: '', ru: '' },
             competencies: [
@@ -93,7 +99,9 @@ export const model = {
             ],
           },
           {
+            id: 'iot',
             title: 'IoT',
+            titleExt: 'Embedded software',
             contentFile: { en: 'assets/services/iot-en.html', ru: 'assets/services/iot-ru.html' },
             content: { en: '', ru: '' },
             competencies: [
@@ -108,7 +116,9 @@ export const model = {
         title: 'Client services',
         items: [
           {
+            id: 'ivr',
             title: 'Voice IVR',
+            titleExt: 'Voice IVR development',
             contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
             content: { en: '', ru: '' },
             competencies: [
@@ -119,7 +129,9 @@ export const model = {
             ],
           },
           {
+            id: 'chatbot',
             title: 'Chatbot',
+            titleExt: 'Chatbot development',
             contentFile: { en: 'assets/services/chatbot-en.html', ru: 'assets/services/chatbot-ru.html' },
             content: { en: '', ru: '' },
             competencies: [

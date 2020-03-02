@@ -1,0 +1,38 @@
+@import "src/style/colors.scss";
+
+.header-1 {
+  padding: 1.5em 0;
+}
+
+hr {
+  margin: 0;
+  margin-bottom: 3em;
+}
+
+.menu {
+  padding-top: 3.5em;
+  padding-right: 2em;
+  // border: 1px solid red;
+}
+
+.menu-item {
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  text-align: right;
+  cursor: pointer;
+
+  &.active {
+    color: $main-active;
+  }
+}
+
+.competence {
+  & h2 {
+    font-size: 32px;
+    font-weight: 300;
+  }
+  hr {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+}

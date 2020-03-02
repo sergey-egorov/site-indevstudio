@@ -1,0 +1,46 @@
+<app-main-toolbar page="services"></app-main-toolbar>
+
+<div class="page">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-2">
+        <div class="menu">
+
+          <ng-container *ngFor="let item of itemList">
+            <div class="menu-item" [ngClass]="{'active': selected === item.id}" (click)="selected = item.id">
+              {{ item.title }}</div>
+          </ng-container>
+
+        </div>
+      </div>
+
+      <div class="col-lg-10">
+
+        <ng-container *ngFor="let item of itemList">
+
+          <ng-container *ngIf="item.id === selected">
+            <div class="header-1">{{ item.titleExt }}</div>
+            <hr>
+
+            <p [innerHTML]="item.content[translate.currentLang] || item.content['en']"></p>
+            <br>
+
+            <ng-container *ngFor="let competence of item.competencies">
+              <div class="competence">
+                <h2> {{ competence }} </h2>
+                <hr>
+              </div>
+            </ng-container>
+
+          </ng-container>
+
+        </ng-container>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>

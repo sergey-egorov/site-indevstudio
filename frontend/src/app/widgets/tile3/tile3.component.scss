@@ -45,13 +45,14 @@ li {
   margin-right: 10px;
   margin-bottom: 10px;
   box-shadow: 2px 2px 3px #ccc;
+  border-radius: 2em;
 
   text-transform: capitalize;
   font-size: 0.85em;
   color: $main-active-3; // $main-text-dark;
   opacity: 0.9;
   transition: all 1s;
-  background: #cfd8dc33;
+  background: #cfd8dc66;
   white-space: nowrap;
 
   .bullet {
@@ -69,14 +70,14 @@ li {
   i {
     color: $main-active-3;
     font-size: 0.7em;
-    // opacity: 0.7;
+    opacity: 0.9;
     padding: 0;
     padding-bottom: 0.7em;
     transition: all 1s;
   }
 
   &:hover {
-    background: #cfd8dc99;
+    background: #cfd8dccc;
     cursor: pointer;
     opacity: 1;
     transition: all 0.5s;
@@ -97,4 +98,10 @@ li {
   &:hover {
     background: #b0bec599;
   }
+}
+
+.more {
+  outline: none !important;
+  text-decoration: none !important;
+  color: $main-active-3 !important;
 }
