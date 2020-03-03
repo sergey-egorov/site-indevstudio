@@ -61,6 +61,19 @@ export const model = {
             titleExt: 'Web development',
             contentFile: { en: 'assets/services/web-en.html', ru: 'assets/services/web-ru.html' },
             content: { en: '', ru: '' },
+
+            technologies: [
+              'angular',
+              'bootstrap',
+              'electron',
+              'html5',
+              'java',
+              'javascript',
+              'matdesign',
+              'postgres',
+              'spring',
+            ],
+
             competencies: [
               'Digital Commerce',
               'Enterprise Web Solutions',
@@ -74,6 +87,15 @@ export const model = {
             titleExt: 'Mobile development',
             contentFile: { en: 'assets/services/mobile-en.html', ru: 'assets/services/mobile-ru.html' },
             content: { en: '', ru: '' },
+
+            technologies: [
+              'angular',
+              'electron',
+              'html5',
+              'javascript',
+              'matdesign',
+            ],
+
             competencies: [
               'Enterprise Mobile Apps',
               'iPhone/iPad Solutions',
@@ -253,5 +275,54 @@ export const model = {
       img: 'assets/img/dig-commerce.png'
     },
   ],
+
+
+  technologies: [
+    {
+      id: 'angular',
+      img: 'assets/img/tech/angular.png',
+      href: 'https://angular.io/'
+    },
+    {
+      id: 'bootstrap',
+      img: 'assets/img/tech/bootstrap.png',
+      href: 'https://getbootstrap.com/'
+    },
+    {
+      id: 'matdesign',
+      img: 'assets/img/tech/matdesign.png',
+      href: 'https://material.io/'
+    },
+    {
+      id: 'html5',
+      img: 'assets/img/tech/html5.png',
+      href: 'https://www.w3.org/'
+    },
+    {
+      id: 'javascript',
+      img: 'assets/img/tech/javascript.png',
+      href: 'https://www.javascript.com/'
+    },
+    {
+      id: 'electron',
+      img: 'assets/img/tech/electron.png',
+      href: 'https://www.electronjs.org/'
+    },
+    {
+      id: 'spring',
+      img: 'assets/img/tech/spring.png',
+      href: 'https://spring.io/'
+    },
+    {
+      id: 'postgres',
+      img: 'assets/img/tech/postgres.png',
+      href: 'https://www.postgresql.org/'
+    },
+    {
+      id: 'java',
+      img: 'assets/img/tech/java.png',
+      href: 'https://www.java.com/'
+    },
+  ]
 
 };

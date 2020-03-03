@@ -22,12 +22,23 @@ export class ServicesExtPageComponent implements OnInit {
     this.itemList = this.itemList.concat(model.pages.services.client_services.items);
   }
 
+  getTechnologies(technologiesIdList) {
+    const result = [];
+    for (const id of technologiesIdList || []) {
+      const item = this.model.technologies.find(c => c.id === id);
+      if (item) {
+        result.push(item);
+      }
+    }
+    return result;
+  }
+
   getCompetencies(competenceIdList) {
     const result = [];
-    for (const competenceId of competenceIdList) {
-      let competence = this.model.competencies.find(c => c.id === competenceId);
-      if (competence) {
-        result.push(competence);
+    for (const id of competenceIdList || []) {
+      const item = this.model.competencies.find(c => c.id === id);
+      if (item) {
+        result.push(item);
       }
     }
     return result;

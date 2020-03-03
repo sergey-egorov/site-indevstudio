@@ -26,6 +26,20 @@
 
             <p [innerHTML]="item.content[translate.currentLang] || item.content['en']"></p>
             <br>
+
+            <!-- Technologies -->
+            <h3 *ngIf="item.technologies">Technologies</h3>
+
+            <ng-container *ngFor="let technology of getTechnologies(item.technologies)">
+              <a class="technology" *ngIf="technology" [href]="technology.href" target="_blank">
+                <img [src]="technology.img">
+              </a>
+            </ng-container>
+            <br>
+            <br>
+
+            <!-- Competencies -->
+            <h3 *ngIf="item.competencies">We develop web applications customized to fit your needs</h3>
             <br>
 
             <ng-container *ngFor="let competence of getCompetencies(item.competencies)">

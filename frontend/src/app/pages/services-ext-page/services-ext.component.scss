@@ -18,6 +18,14 @@ hr {
   margin-bottom: 3em;
 }
 
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: $main-active;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+}
+
 .menu {
   padding-top: 3.5em;
   padding-right: 2em;
@@ -36,11 +44,35 @@ hr {
   }
 }
 
+.technology {
+  display: inline-block;
+  padding: 1em;
+  margin: 0;
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+  // box-shadow: 3px 3px 5px #ccc;
+  border-radius: 50%;
+  border: 1px solid $main-text-light;
+  // background: #039be522;
+
+  transition: all 0.5s;
+
+  & img {
+    width: 50px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #ccc;
+    transition: all 0.5s;
+  }
+}
+
 .competence {
   & h2 {
     font-size: 28px;
     font-weight: 300;
-    // color: black; 
+    // color: black;
     color: $main-active-3;
     text-transform: uppercase;
   }
@@ -54,3 +86,4 @@ hr {
     padding-bottom: 2em;
   }
 }
+
