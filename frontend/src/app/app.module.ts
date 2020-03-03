@@ -18,6 +18,7 @@ import { Tile1Component } from './widgets/tile1/tile1.component';
 import { Tile2Component } from './widgets/tile2/tile2.component';
 import { Tile3Component } from './widgets/tile3/tile3.component';
 import { ServicesExtPageComponent } from './pages/services-ext-page/services-ext.component';
+import { PortfolioExtPageComponent } from './pages/portfolio-ext-page/portfolio-ext.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateLoader {
   return new TranslateHttpLoader(http, './assets/locale/', '.json');
@@ -36,7 +37,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateLoader {
     Tile1Component,
     Tile2Component,
     Tile3Component,
-    ServicesExtPageComponent
+    ServicesExtPageComponent,
+    PortfolioExtPageComponent
   ],
   imports: [
     BrowserModule,

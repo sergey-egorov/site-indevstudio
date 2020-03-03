@@ -168,6 +168,7 @@ export const model = {
     portfolio: {
       solutions: [
         {
+          id: 'cpn-ide',
           title: 'GUI tool for editing, testing and simulating Colored Petri Nets',
           technologies: ['Javascript', 'Angular', 'Electron', 'Java', 'Springboot'],
           contentFile: { en: 'assets/portfolio/cpn-ide/index-en.html', ru: 'assets/portfolio/cpn-ide/index-ru.html' },
@@ -175,6 +176,7 @@ export const model = {
           img: 'assets/portfolio/cpn-ide/screen-1.png'
         },
         {
+          id: 'super-trade-in',
           title: 'Smartphone diagnostic applications and automated trade-in service',
           technologies: ['iOS', 'Android', 'Javascript', 'Angular', 'Java', 'Springboot'],
           contentFile: { en: 'assets/portfolio/tradein/index-en.html', ru: 'assets/portfolio/tradein/index-ru.html' },
@@ -182,6 +184,7 @@ export const model = {
           img: 'assets/portfolio/tradein/screen-1.png'
         },
         {
+          id: 'subtitles',
           title: 'Automatic subtitle generator',
           technologies: ['Speech recognition', 'Media stream processing', 'Javascript', 'Angular', 'Java', 'Springboot'],
           contentFile: { en: 'assets/portfolio/subtitle/index-en.html', ru: 'assets/portfolio/subtitle/index-ru.html' },
@@ -189,6 +192,7 @@ export const model = {
           img: 'assets/portfolio/subtitle/screen-1.png'
         },
         {
+          id: 'voice-ivr',
           title: 'Voice IVR for water delivery company',
           technologies: ['Java', 'Springboot', 'Asterisk', 'C++'],
           contentFile: { en: 'assets/portfolio/ivr-water/index-en.html', ru: 'assets/portfolio/ivr-water/index-ru.html' },
@@ -196,6 +200,7 @@ export const model = {
           img: 'assets/portfolio/ivr-water/screen-1.png'
         },
         {
+          id: 'stc-cloud',
           title: 'Speech processing cloud service frontend',
           technologies: ['Javascript', 'Angular', 'Java', 'Springboot'],
           contentFile: { en: 'assets/portfolio/stc-cloud/index-en.html', ru: 'assets/portfolio/stc-cloud/index-ru.html' },
