@@ -1,4 +1,4 @@
-@import "src/style/colors.scss";
+@import "src/styles/colors.scss";
 
 .navbar-brand img {
   height: 50px;
@@ -40,7 +40,7 @@
       font-size: 0.8em;
       padding: 1em .5em !important;
       cursor: pointer;
-    }    
+    }
   }
   /* change the color of active or hovered links */
   .nav-item.active .nav-link,
