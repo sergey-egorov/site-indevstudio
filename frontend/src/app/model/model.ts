@@ -231,13 +231,13 @@ export const model = {
   competencies: [
     {
       id: 'Digital Commerce',
-      contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
+      contentFile: { en: 'assets/services/digit-com-en.html', ru: 'assets/services/digit-com-ru.html' },
       content: { en: '', ru: '' },
       img: 'assets/img/dig-commerce.png'
     },
     {
       id: 'Enterprise Web Solutions',
-      contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
+      contentFile: { en: 'assets/services/enterprise-en.html', ru: 'assets/services/enterprise-ru.html' },
       content: { en: '', ru: '' },
       img: 'assets/img/enterprise.png'
     },
@@ -249,7 +249,7 @@ export const model = {
     },
     {
       id: 'Web Applications',
-      contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
+      contentFile: { en: 'assets/services/webapp-en.html', ru: 'assets/services/webapp-ru.html' },
       content: { en: '', ru: '' },
       img: 'assets/img/web-apps.png'
     },
