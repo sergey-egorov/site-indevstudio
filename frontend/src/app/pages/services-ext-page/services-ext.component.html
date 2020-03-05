@@ -39,19 +39,20 @@
             <br>
 
             <!-- Competencies -->
-            <h3 *ngIf="item.competencies">We develop web applications customized to fit your needs</h3>
-            <br>
+            <!-- <h3 *ngIf="item.competencies">We develop web applications customized to fit your needs</h3> -->
+            <hr>
 
             <ng-container *ngFor="let competence of getCompetencies(item.competencies)">
 
               <div class="competence row" *ngIf="competence">
-                <div class="col-lg-2">
+                <div class="col-lg-3">
                   <img [src]="competence.img">
                 </div>
 
-                <div class="col-lg-10">
+                <div class="col-lg-9">
                   <h2> {{ competence.id }} </h2>
-                  <hr>
+                  <!-- <hr> -->
+                  <br>
                   <p [innerHTML]="competence.content[translate.currentLang] || competence.content['en']"></p>
                   <br>
                 </div>
