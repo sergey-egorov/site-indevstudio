@@ -97,10 +97,11 @@ export const model = {
 
             competencies: [
               'Enterprise Mobile Apps',
+              'Android Applications', 
               'iPhone/iPad Solutions',
-              'Android Applications',
+              'Cross-Platform Solutions',
               'Social Networking Apps',
-              'Cross-Platform Solutions'
+              'Apps/Library porting'
             ],
           },
           {
@@ -144,7 +145,7 @@ export const model = {
             content: { en: '', ru: '' },
             competencies: [
               'Speech recognition',
-              'Speech syntesis',
+              'Speech synthesis',
               'VoIP',
               'Natural language processing'
             ],
@@ -206,6 +207,7 @@ export const model = {
           content: { en: '', ru: '' },
           img: 'assets/portfolio/stc-cloud/screen-1.png'
         },
+        
       ]
 
     }
@@ -243,7 +245,7 @@ export const model = {
     },
     {
       id: 'Web Back Ends',
-      contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
+      contentFile: { en: 'assets/services/back-en.html', ru: 'assets/services/back-ru.html' },
       content: { en: '', ru: '' },
       img: 'assets/img/web-backs.png'
     },
@@ -253,31 +255,85 @@ export const model = {
       content: { en: '', ru: '' },
       img: 'assets/img/web-apps.png'
     },
-
     {
       id: 'Speech recognition',
-      contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
+      contentFile: { en: 'assets/services/speech-recog-en.html', ru: 'assets/services/speech-recog-en.html' },
       content: { en: '', ru: '' },
-      img: 'assets/img/dig-commerce.png'
+      img: 'assets/img/web-backs.png'
     },
     {
-      id: 'Speech syntesis',
-      contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
+      id: 'Speech synthesis',
+      contentFile: { en: 'assets/services/speech-synth-en.html', ru: 'assets/services/speech-synth-ru.html' },
       content: { en: '', ru: '' },
-      img: 'assets/img/dig-commerce.png'
+      img: 'assets/img/web-backs.png'
     },
     {
       id: 'VoIP',
-      contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
+      contentFile: { en: 'assets/services/voip-en.html', ru: 'assets/services/voip-ru.html' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/enterprise.png'
+    },
+    {
+      id: 'Natural language processing',
+      contentFile: { en: '', ru: '' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/web-backs.png'
+    },
+    {
+      id: 'Enterprise Mobile Apps',
+      contentFile: { en: 'assets/services/enterprise-mob-en.html', ru: 'assets/services/enterprise-mob-ru.html' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/enterprise.png'
+    },
+    {
+      id: 'Android Applications',
+      contentFile: { en: 'assets/services/android-en.html', ru: 'assets/services/android-ru.html' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/web-apps.png'
+    },
+    {
+      id: 'iPhone/iPad Solutions',
+      contentFile: { en: 'assets/services/ios-en.html', ru: 'assets/services/ios-ru.html' },
       content: { en: '', ru: '' },
       img: 'assets/img/dig-commerce.png'
     },
     {
-      id: 'Natural language processing',
-      contentFile: { en: 'assets/services/ivr-en.html', ru: 'assets/services/ivr-ru.html' },
+      id: 'Cross-Platform Solutions',
+      contentFile: { en: 'assets/services/cross-plat-en.html', ru: 'assets/services/cross-plat-ru.html' },
       content: { en: '', ru: '' },
-      img: 'assets/img/dig-commerce.png'
+      img: 'assets/img/enterprise.png'
     },
+    {
+      id: 'Social Networking Apps',
+      contentFile: { en: 'assets/services/social-net-en.html', ru: 'assets/services/social-net-ru.html' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/web-backs.png'
+    },
+    {
+      id: 'Apps/Library porting',
+      contentFile: { en: '', ru: '' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/web-backs.png'
+    },
+    {
+      id: 'Raspberry Pi Apps',
+      contentFile: { en: 'assets/services/rasp-pi-en.html', ru: 'assets/services/rasp-pi-ru.html' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/web-backs.png'
+    },
+    {
+      id: 'On-board system Apps',
+      contentFile: { en: 'assets/services/board-sys-en.html', ru: 'assets/services/board-sys-ru.html' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/enterprise.png'
+    },
+    {
+      id: 'Artificial intelligence',
+      contentFile: { en: '', ru: '' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/web-backs.png'
+    }
+
   ],
 
 
