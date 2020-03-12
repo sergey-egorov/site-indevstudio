@@ -275,7 +275,7 @@ export const model = {
     },
     {
       id: 'Natural language processing',
-      contentFile: { en: '', ru: '' },
+      contentFile: { en: 'assets/services/nlp-en.html', ru: 'assets/services/nlp-ru.html' },
       content: { en: '', ru: '' },
       img: 'assets/img/web-backs.png'
     },
@@ -311,7 +311,7 @@ export const model = {
     },
     {
       id: 'Apps/Library porting',
-      contentFile: { en: '', ru: '' },
+      contentFile: { en: 'assets/services/porting-en.html', ru: 'assets/services/porting-ru.html' },
       content: { en: '', ru: '' },
       img: 'assets/img/web-backs.png'
     },
@@ -329,7 +329,7 @@ export const model = {
     },
     {
       id: 'Artificial intelligence',
-      contentFile: { en: '', ru: '' },
+      contentFile: { en: 'assets/services/ai-en.html', ru: 'assets/services/ai-ru.html' },
       content: { en: '', ru: '' },
       img: 'assets/img/web-backs.png'
     }
