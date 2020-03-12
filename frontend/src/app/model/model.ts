@@ -257,7 +257,7 @@ export const model = {
     },
     {
       id: 'Speech recognition',
-      contentFile: { en: 'assets/services/speech-recog-en.html', ru: 'assets/services/speech-recog-en.html' },
+      contentFile: { en: 'assets/services/speech-recog-en.html', ru: 'assets/services/speech-recog-ru.html' },
       content: { en: '', ru: '' },
       img: 'assets/img/web-backs.png'
     },
