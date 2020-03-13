@@ -17,9 +17,9 @@ export const model = {
             img: 'assets/img/mobile-services-1.png',
           },
           {
-            id: 'complex',
-            title: 'Complex',
-            note: 'Complex distributed systems for business',
+            id: 'custom',
+            title: 'Custom software',
+            note: 'Complex systems for business',
             img: 'assets/img/dev-bg-1.png',
           },
           {
@@ -105,19 +105,15 @@ export const model = {
             ],
           },
           {
-            id: 'complex',
-            title: 'Complex',
-            titleExt: 'Complex development',
+            id: 'custom',
+            title: 'Custom software',
+            titleExt: 'Custom software development',
             contentFile: { en: 'assets/services/complex-en.html', ru: 'assets/services/complex-ru.html' },
             content: { en: '', ru: '' },
             competencies: [
-              'System analysis',
-              'Design & UI',
-              'Development',
-              'QA & Testing',
-              'Staff Augmentation',
-              'Deployment',
-              'Integration'
+              'Digital Transformation',
+              'Software Integration',
+              'Cloud Solutions'
             ],
           },
           {
@@ -332,6 +328,24 @@ export const model = {
       contentFile: { en: 'assets/services/ai-en.html', ru: 'assets/services/ai-ru.html' },
       content: { en: '', ru: '' },
       img: 'assets/img/web-backs.png'
+    },
+    {
+      id: 'Digital Transformation',
+      contentFile: { en: 'assets/services/digit-trans-en.html', ru: 'assets/services/digit-trans-ru.html' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/web-backs.png'
+    },
+    {
+      id: 'Software Integration',
+      contentFile: { en: 'assets/services/soft-integ-en.html', ru: 'assets/services/soft-integ-ru.html' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/enterprise.png'
+    },
+    {
+      id: 'Cloud Solutions',
+      contentFile: { en: 'assets/services/cloud-sol-en.html', ru: 'assets/services/cloud-sol-ru.html' },
+      content: { en: '', ru: '' },
+      img: 'assets/img/web-apps.png'
     }
 
   ],
