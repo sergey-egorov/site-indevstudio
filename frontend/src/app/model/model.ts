@@ -343,7 +343,7 @@ export const model = {
     },
     {
       id: 'Cloud Solutions',
-      contentFile: { en: 'assets/services/cloud-sol-en.html', ru: 'assets/services/cloud-sol-ru.html' },
+      contentFile: { en: 'assets/services/cloud-en.html', ru: 'assets/services/cloud-ru.html' },
       content: { en: '', ru: '' },
       img: 'assets/img/web-apps.png'
     }
