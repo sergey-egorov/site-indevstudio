@@ -203,6 +203,46 @@ export const model = {
           content: { en: '', ru: '' },
           img: 'assets/portfolio/stc-cloud/screen-1.png'
         },
+        {
+          id: 'fat-sdk',
+          title: 'FAT SDK License Service',
+          technologies: ['Springboot'],
+          contentFile: { en: '', ru: '' },
+          content: { en: '', ru: '' },
+          img: ''
+        },
+        {
+          id: 'worktime-tracker',
+          title: 'Worktime Face Tracker',
+          technologies: ['Angular', 'Android'],
+          contentFile: { en: '', ru: '' },
+          content: { en: '', ru: '' },
+          img: ''
+        },
+        {
+          id: 'warehouse-app',
+          title: 'Warehouse Management App',
+          technologies: ['Android'],
+          contentFile: { en: '', ru: '' },
+          content: { en: '', ru: '' },
+          img: ''
+        },
+        {
+          id: 'voice-banking',
+          title: 'Voice Interactive Banking Transactions app',
+          technologies: ['Android', 'Speech recognition'],
+          contentFile: { en: '', ru: '' },
+          content: { en: '', ru: '' },
+          img: ''
+        },
+        {
+          id: 'video-recorder-manager',
+          title: 'Video Recorder Manager App',
+          technologies: ['Android'],
+          contentFile: { en: '', ru: '' },
+          content: { en: '', ru: '' },
+          img: ''
+        },
         
       ]
 
