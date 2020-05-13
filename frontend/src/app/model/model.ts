@@ -167,83 +167,102 @@ export const model = {
           id: 'cpn-ide',
           title: 'GUI tool for editing, testing and simulating Colored Petri Nets',
           technologies: ['Javascript', 'Angular', 'Electron', 'Java', 'Springboot'],
-          contentFile: { en: 'assets/portfolio/cpn-ide/index-en.html', ru: 'assets/portfolio/cpn-ide/index-ru.html' },
+          contentFile: { en: 'assets/portfolio/cpn-ide/index-short-en.html', ru: 'assets/portfolio/cpn-ide/index-short-ru.html' },
           content: { en: '', ru: '' },
+          contentFullFile: { en: 'assets/portfolio/cpn-ide/index-en.html', ru: 'assets/portfolio/cpn-ide/index-ru.html' },
+          contentFull: { en: '', ru: '' },
           img: 'assets/portfolio/cpn-ide/screen-1.png'
         },
         {
           id: 'super-trade-in',
           title: 'Smartphone diagnostic applications and automated trade-in service',
           technologies: ['iOS', 'Android', 'Javascript', 'Angular', 'Java', 'Springboot'],
-          contentFile: { en: 'assets/portfolio/tradein/index-en.html', ru: 'assets/portfolio/tradein/index-ru.html' },
+          contentFile: { en: 'assets/portfolio/tradein/index-short-en.html', ru: 'assets/portfolio/tradein/index-short-ru.html' },
           content: { en: '', ru: '' },
+          contentFullFile: { en: 'assets/portfolio/tradein/index-en.html', ru: 'assets/portfolio/tradein/index-ru.html' },
+          contentFull: { en: '', ru: '' },
           img: 'assets/portfolio/tradein/screen-1.png'
         },
         {
           id: 'subtitles',
           title: 'Automatic subtitle generator',
           technologies: ['Speech recognition', 'Media stream processing', 'Javascript', 'Angular', 'Java', 'Springboot'],
-          contentFile: { en: 'assets/portfolio/subtitle/index-en.html', ru: 'assets/portfolio/subtitle/index-ru.html' },
+          contentFile: { en: 'assets/portfolio/subtitles/index-short-en.html', ru: 'assets/portfolio/subtitles/index-short-ru.html' },
           content: { en: '', ru: '' },
-          img: 'assets/portfolio/subtitle/screen-1.png'
+          contentFullFile: { en: 'assets/portfolio/subtitles/index-en.html', ru: 'assets/portfolio/subtitles/index-ru.html' },
+          contentFull: { en: '', ru: '' },
+          img: 'assets/portfolio/subtitles/screen-1.png'
         },
         {
-          id: 'voice-ivr',
+          id: 'ivr-water',
           title: 'Voice IVR for water delivery company',
           technologies: ['Java', 'Springboot', 'Asterisk', 'C++'],
-          contentFile: { en: 'assets/portfolio/ivr-water/index-en.html', ru: 'assets/portfolio/ivr-water/index-ru.html' },
+          contentFile: { en: 'assets/portfolio/ivr-water/index-short-en.html', ru: 'assets/portfolio/ivr-water/index-short-ru.html' },
           content: { en: '', ru: '' },
+          contentFullFile: { en: 'assets/portfolio/ivr-water/index-en.html', ru: 'assets/portfolio/ivr-water/index-ru.html' },
+          contentFull: { en: '', ru: '' },
           img: 'assets/portfolio/ivr-water/screen-1.png'
         },
         {
           id: 'stc-cloud',
           title: 'Speech processing cloud service frontend',
           technologies: ['Javascript', 'Angular', 'Java', 'Springboot'],
-          contentFile: { en: 'assets/portfolio/stc-cloud/index-en.html', ru: 'assets/portfolio/stc-cloud/index-ru.html' },
+          contentFile: { en: 'assets/portfolio/stc-cloud/index-short-en.html', ru: 'assets/portfolio/stc-cloud/index-short-ru.html' },
           content: { en: '', ru: '' },
+          contentFullFile: { en: 'assets/portfolio/stc-cloud/index-en.html', ru: 'assets/portfolio/stc-cloud/index-ru.html' },
+          contentFull: { en: '', ru: '' },
           img: 'assets/portfolio/stc-cloud/screen-1.png'
         },
         {
           id: 'fat-sdk',
           title: 'FAT SDK License Service',
           technologies: ['Springboot'],
-          contentFile: { en: '', ru: '' },
+          contentFile: { en: 'assets/portfolio/fat-sdk/index-short-en.html', ru: 'assets/portfolio/fat-sdk/index-short-ru.html' },
           content: { en: '', ru: '' },
+          contentFullFile: { en: 'assets/portfolio/fat-sdk/index-en.html', ru: 'assets/portfolio/fat-sdk/index-ru.html' },
+          contentFull: { en: '', ru: '' },
           img: ''
         },
         {
           id: 'worktime-tracker',
           title: 'Worktime Face Tracker',
           technologies: ['Angular', 'Android'],
-          contentFile: { en: '', ru: '' },
+          contentFile: { en: 'assets/portfolio/worktime-tracker/index-short-en.html', ru: 'assets/portfolio/worktime-tracker/index-short-ru.html' },
           content: { en: '', ru: '' },
+          contentFullFile: { en: 'assets/portfolio/worktime-tracker/index-en.html', ru: 'assets/portfolio/worktime-tracker/index-ru.html' },
+          contentFull: { en: '', ru: '' },
           img: ''
         },
         {
           id: 'warehouse-app',
           title: 'Warehouse Management App',
           technologies: ['Android'],
-          contentFile: { en: '', ru: '' },
+          contentFile: { en: 'assets/portfolio/warehouse-app/index-short-en.html', ru: 'assets/portfolio/warehouse-app/index-short-ru.html' },
           content: { en: '', ru: '' },
+          contentFullFile: { en: 'assets/portfolio/warehouse-app/index-en.html', ru: 'assets/portfolio/warehouse-app/index-ru.html' },
+          contentFull: { en: '', ru: '' },
           img: ''
         },
         {
           id: 'voice-banking',
           title: 'Voice Interactive Banking Transactions app',
           technologies: ['Android', 'Speech recognition'],
-          contentFile: { en: '', ru: '' },
+          contentFile: { en: 'assets/portfolio/voice-banking/index-short-en.html', ru: 'assets/portfolio/voice-banking/index-short-ru.html' },
           content: { en: '', ru: '' },
+          contentFullFile: { en: 'assets/portfolio/voice-banking/index-en.html', ru: 'assets/portfolio/voice-banking/index-ru.html' },
+          contentFull: { en: '', ru: '' },
           img: ''
         },
         {
-          id: 'video-recorder-manager',
+          id: 'video-recorder',
           title: 'Video Recorder Manager App',
           technologies: ['Android'],
-          contentFile: { en: '', ru: '' },
+          contentFile: { en: 'assets/portfolio/video-recorder/index-short-en.html', ru: 'assets/portfolio/video-recorder/index-short-ru.html' },
           content: { en: '', ru: '' },
+          contentFullFile: { en: 'assets/portfolio/video-recorder/index-en.html', ru: 'assets/portfolio/video-recorder/index-ru.html' },
+          contentFull: { en: '', ru: '' },
           img: ''
         },
-        
       ]
 
     }

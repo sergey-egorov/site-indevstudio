@@ -1,1 +1,19 @@
-Automated assessment of mobile device state for trade-in network
+Problems to solve<br>
+The client, a company selling mobile devices, implemented a trade-in program in its business process. 
+To speed up the trade-in process and determine consistent and fair values for consumer devices, they needed an
+automated diagnostic tool that could carry out evaluation of the working and physical condition of a device.<br><br>
+
+Solutions<br>
+The work started with several collaboration sessions with the client during which we discussed the scope of features to be developed, clarify 
+product requirements and plan the development roadmap. To meet the requirements, we have developed a solution combining the following components:<br><br>
+<li>A mobile app for Android/iOS that performs diagnostics of software and hardware functions of a mobile device. The app checks 
+a device for several dozen parameters and transmits the results to the central system.</li><br>
+<li>A web portal consisting of two modules:</li>
+- a front-end Angular application, <br>
+- a standalone back-end application in Java created with the use of the Spring Boot library and having a database. <br>
+The web portal is used for registering parameters of mobile device diagnostics sessions and automatically generating quick and accurate
+condition reports for tested devices and other necessary documentation for providing trade-in service.<br><br>
+<li>A server application that centrally manages mobile device diagnostics points.</li><br>
+
+View examples<br>
+
