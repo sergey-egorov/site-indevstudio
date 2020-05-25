@@ -1,4 +1,4 @@
-@import "src/style/colors.scss";
+@import "src/styles/colors.scss";
 
 .section {
   // padding-top: 5em;
@@ -24,7 +24,7 @@
 
   .header-1 {
     color: $main-text;
-    padding-bottom: 1.5em;
+    padding-top: 2em;
   }
 }
 
@@ -33,7 +33,7 @@
 
   .header-1 {
     color: white;
-    padding-bottom: 1.5em;
+    padding-top: 2em;
   }
 }
 

@@ -1,4 +1,4 @@
-@import "src/style/colors.scss";
+@import "src/styles/colors.scss";
 
 // h1 {
 //   color: #546e7a;
@@ -23,20 +23,6 @@ h1 {
   color: block; // $main-text-dark;
   // font-weight: bold;
 }
-
-hr {
-  margin-bottom: 2em;
-}
-
-.header-1 {
-  padding-top: 1.5em;
-  padding-bottom: 1em;
-}
-
-
-// p {
-//   color: #666;
-// }
 
 img {
   float: left;

@@ -1,7 +1,6 @@
-@import "src/style/colors.scss";
+@import "src/styles/colors.scss";
 
 .content {
-  // padding: 1em 2em;
   color: $light-grey;
 }
 
@@ -11,18 +10,15 @@
 
 .bottom {
   width: 100%;
-  // background: #444;
   background: url("src/assets/img/bg-main.png") left top no-repeat;
   background-size: cover;
 
-  padding-top: 2em;
   padding-bottom: 5em;
   color: #999;
   font-size: 1.2em;
 
   h1 {
     color: white;
-    // text-shadow: 2px 2px 5px #333;
     font-size: 2em;
     font-weight: bold;
     width: 100%;
@@ -42,8 +38,6 @@
 }
 
 .header-1 {
-  padding-top: 1em;
-  padding-bottom: 2em;
   color: white;
 }
 

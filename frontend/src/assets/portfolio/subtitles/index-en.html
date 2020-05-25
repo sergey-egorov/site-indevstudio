@@ -1,0 +1,28 @@
+Problems to solve<br>
+The client, a TV broadcaster, reached out to us with a need for a subtitle creation tool that would make it much easier and faster 
+to generate subtitles for telecasts. Until then, subtitles were made manually without the use of specialized software. As a consequence, 
+there was a significant time lag between the broadcast and the video stream generated in real time. The client's need was to reduce 
+the lag by using the minimum possible amount of technical and human resources.<br><br>
+
+Solutions<br>
+The scope of work included developing a cross-platform application with the following features:<br>
+<ul>
+  <li>receiving media stream and audio information retrieval from it,</li>
+  <li>speech recognition and transforming voice data into text form,</li>
+  <li>displaying a transcript with timestamps,</li>
+  <li>automatic subtitles generation in the required format</li>
+  <li>automatic translation of subtitles into another language,</li>
+  <li>inserting the created subtitles into the broadcast video stream,</li>
+  <li>a convenient, user-friendly interface with clear options for editing subtitles (unfortunately, editing can not be avoided 
+  in any way).</li>
+  <li>displaying visual timeline and soundwave for controlling and adjusting the speed and duration of the subtitles</li>
+</ul>
+Having analyzed the client’s needs, our team decided to use the cloud service we had created for one of our previous projects for 
+speech recognition and automatic translation into another language. Based on Spring Boot and Java, we have created a standalone 
+server to provide video streaming, audio processing, and speech-to-text functions.
+After some sessions with the client on how the user interface should be organized, we clearly defined what to be achieved and 
+built it quite fast and effectively with the use of the Angular platform. To make subtitle editing as quick and easy as possible, 
+we have added a set of keyboard shortcuts that duplicate the main functions of the GUI.<br><br>
+
+View examples
+

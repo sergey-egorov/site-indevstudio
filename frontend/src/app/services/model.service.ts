@@ -39,8 +39,25 @@ export class ModelService {
           }
         }
       }
-
+    }
+    
+    for (const itemList of [
+      this.model.pages.portfolio.solutions,
+    ]) {
+      for (const item of itemList) {
+        if (item.contentFullFile) {
+          for (const locale in item.contentFullFile) {
+            this.restService.getFile(item.contentFullFile[locale]).then(
+              (response) => {
+                item.contentFull[locale] = response.toString();
+              },
+              (error) => {
+                console.error(this.constructor.name, 'loadContent(), error = ', error);
+              }
+            );
+          }
+        }
+      }
     }
   }
-
 }
