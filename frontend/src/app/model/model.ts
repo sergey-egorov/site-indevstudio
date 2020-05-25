@@ -195,8 +195,8 @@ export const model = {
         },
         {
           id: 'ivr-water',
-          title: 'Voice IVR for water delivery company',
-          technologies: ['Java', 'Springboot', 'Asterisk', 'C++'],
+          title: 'IVR Companion',
+          technologies: ['Java', 'Springboot', 'Asterisk', 'C++', 'STC VoiceNavigator', 'UniMRCP Server', 'Docker'],
           contentFile: { en: 'assets/portfolio/ivr-water/index-short-en.html', ru: 'assets/portfolio/ivr-water/index-short-ru.html' },
           content: { en: '', ru: '' },
           contentFullFile: { en: 'assets/portfolio/ivr-water/index-en.html', ru: 'assets/portfolio/ivr-water/index-ru.html' },
@@ -216,7 +216,7 @@ export const model = {
         {
           id: 'fat-sdk',
           title: 'FAT SDK License Service',
-          technologies: ['Springboot'],
+          technologies: ['Springboot', 'Angular'],
           contentFile: { en: 'assets/portfolio/fat-sdk/index-short-en.html', ru: 'assets/portfolio/fat-sdk/index-short-ru.html' },
           content: { en: '', ru: '' },
           contentFullFile: { en: 'assets/portfolio/fat-sdk/index-en.html', ru: 'assets/portfolio/fat-sdk/index-ru.html' },
@@ -226,7 +226,7 @@ export const model = {
         {
           id: 'worktime-tracker',
           title: 'Worktime Face Tracker',
-          technologies: ['Angular', 'Android'],
+          technologies: ['Angular', 'Android', 'Facial Recognition', 'Spring'],
           contentFile: { en: 'assets/portfolio/worktime-tracker/index-short-en.html', ru: 'assets/portfolio/worktime-tracker/index-short-ru.html' },
           content: { en: '', ru: '' },
           contentFullFile: { en: 'assets/portfolio/worktime-tracker/index-en.html', ru: 'assets/portfolio/worktime-tracker/index-ru.html' },
@@ -236,7 +236,7 @@ export const model = {
         {
           id: 'warehouse-app',
           title: 'Warehouse Management App',
-          technologies: ['Android'],
+          technologies: ['Android', 'Java'],
           contentFile: { en: 'assets/portfolio/warehouse-app/index-short-en.html', ru: 'assets/portfolio/warehouse-app/index-short-ru.html' },
           content: { en: '', ru: '' },
           contentFullFile: { en: 'assets/portfolio/warehouse-app/index-en.html', ru: 'assets/portfolio/warehouse-app/index-ru.html' },
@@ -245,8 +245,8 @@ export const model = {
         },
         {
           id: 'voice-banking',
-          title: 'Voice Interactive Banking Transactions app',
-          technologies: ['Android', 'Speech recognition'],
+          title: 'Voice Interactive Banking App',
+          technologies: ['Android', 'Speech recognition', 'Google Speech', 'STC VoiceKey Platform'],
           contentFile: { en: 'assets/portfolio/voice-banking/index-short-en.html', ru: 'assets/portfolio/voice-banking/index-short-ru.html' },
           content: { en: '', ru: '' },
           contentFullFile: { en: 'assets/portfolio/voice-banking/index-en.html', ru: 'assets/portfolio/voice-banking/index-ru.html' },
@@ -256,7 +256,7 @@ export const model = {
         {
           id: 'video-recorder',
           title: 'Video Recorder Manager App',
-          technologies: ['Android'],
+          technologies: ['Java', 'Android'],
           contentFile: { en: 'assets/portfolio/video-recorder/index-short-en.html', ru: 'assets/portfolio/video-recorder/index-short-ru.html' },
           content: { en: '', ru: '' },
           contentFullFile: { en: 'assets/portfolio/video-recorder/index-en.html', ru: 'assets/portfolio/video-recorder/index-ru.html' },
@@ -264,7 +264,6 @@ export const model = {
           img: ''
         },
       ]
-
     }
   },
 
